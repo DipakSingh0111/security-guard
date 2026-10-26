@@ -83,96 +83,111 @@ function ImageFrame({
   );
 }
 
-export default function ServiceDetail({ detail }: { detail: SecurityServiceDetail }) {
+export default function ServiceDetail({
+  detail,
+}: {
+  detail: SecurityServiceDetail;
+}) {
   return (
     <>
       <ScrollReveal direction="none" duration={0.6}>
-      <section className="bg-white py-8 md:py-12">
-        <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12 lg:px-8">
-          <ScrollReveal as="div" direction="right" mobileDirection="up" className="min-w-0">
-            <h2 className="text-3xl font-extrabold leading-[1.06] tracking-tight text-[#09295f] sm:text-4xl lg:text-[58px]">
-              <span className="block">{detail.title.normal}</span>
-              <span className="block text-[#0878f9]">{detail.title.highlighted}</span>
-            </h2>
-            <span className="mt-4 block h-[3px] w-12 bg-[#fdb913]" />
-            <p className="mt-4 max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base">
-              {detail.description}
-            </p>
+        <section className="bg-white py-8 md:py-12">
+          <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12 lg:px-8">
+            <ScrollReveal
+              as="div"
+              direction="right"
+              mobileDirection="up"
+              className="min-w-0"
+            >
+              <h2 className="text-3xl font-extrabold leading-[1.06] tracking-tight text-[#09295f] sm:text-4xl lg:text-[58px]">
+                <span className="block">{detail.title.normal}</span>
+                <span className="block text-[#0878f9]">
+                  {detail.title.highlighted}
+                </span>
+              </h2>
+              <span className="mt-4 block h-[3px] w-12 bg-[#fdb913]" />
+              <p className="mt-4 max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base">
+                {detail.description}
+              </p>
 
-            <ul className="mt-7 grid grid-cols-2 gap-y-4 sm:grid-cols-4 lg:mt-10">
-              {detail.benefits.map((benefit, index) => (
-                <ScrollReveal
-                  as="li"
-                  key={benefit.label}
-                  direction="up"
-                  index={index}
-                  staggerChildren={0.08}
-                  className={`flex min-w-0 flex-col items-center gap-2 px-2 text-center ${
-                    index > 0 ? "border-l border-slate-200" : ""
-                  }`}
-                >
-                  <span className="flex h-14  w-14 items-center justify-center rounded-full bg-[#edf5ff] text-[#0878f9] sm:h-20 sm:w-20">
-                    <FeatureIcon name={benefit.icon} size={40} />
-                  </span>
-                  <span className="max-w-28 text-base font-bold leading-snug text-[#09295f] sm:text-lg">
-                    {benefit.label}
-                  </span>
-                </ScrollReveal>
-              ))}
-            </ul>
-          </ScrollReveal>
+              <ul className="mt-7 grid grid-cols-2 gap-y-4 sm:grid-cols-4 lg:mt-10">
+                {detail.benefits.map((benefit, index) => (
+                  <ScrollReveal
+                    as="li"
+                    key={benefit.label}
+                    direction="up"
+                    index={index}
+                    staggerChildren={0.08}
+                    className={`flex min-w-0 flex-col items-center gap-2 px-2 text-center ${
+                      index > 0 ? "border-l border-slate-200" : ""
+                    }`}
+                  >
+                    <span className="flex h-14  w-14 items-center justify-center rounded-full bg-[#edf5ff] text-[#0878f9] sm:h-20 sm:w-20">
+                      <FeatureIcon name={benefit.icon} size={40} />
+                    </span>
+                    <span className="max-w-28 text-base font-bold leading-snug text-[#09295f] sm:text-lg">
+                      {benefit.label}
+                    </span>
+                  </ScrollReveal>
+                ))}
+              </ul>
+            </ScrollReveal>
 
-          <ScrollReveal as="div" direction="left">
-            <ImageFrame
-              src={detail.heroImage}
-              alt={detail.heroImageAlt}
-              priority
-            />
-          </ScrollReveal>
-        </div>
-      </section>
+            <ScrollReveal as="div" direction="left">
+              <ImageFrame
+                src={detail.heroImage}
+                alt={detail.heroImageAlt}
+                priority
+              />
+            </ScrollReveal>
+          </div>
+        </section>
       </ScrollReveal>
 
       <ScrollReveal direction="none" duration={0.6}>
-      <section className="bg-white pb-10 pt-2 sm:pb-14 lg:pb-16">
-        <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
-          <ScrollReveal as="div" direction="right" mobileDirection="up">
-            <ImageFrame
-              src={detail.overviewImage}
-              alt={detail.overviewImageAlt}
-            />
-          </ScrollReveal>
+        <section className="bg-white pb-10 pt-2 sm:pb-14 lg:pb-16">
+          <div className="mx-auto grid max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
+            <ScrollReveal as="div" direction="right" mobileDirection="up">
+              <ImageFrame
+                src={detail.overviewImage}
+                alt={detail.overviewImageAlt}
+              />
+            </ScrollReveal>
 
-          <ScrollReveal as="div" direction="left" mobileDirection="up" className="min-w-0">
-            <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#09295f] sm:text-4xl lg:text-5xl">
-              {detail.overviewTitle}
-            </h2>
-            <span className="mt-3 block h-[3px] w-12 bg-[#fdb913]" />
-            <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
-              {detail.overviewDescription}
-            </p>
-            <ul className="mt-5 space-y-2.5">
-              {detail.overviewPoints.map((point, index) => (
-                <ScrollReveal
-                  as="li"
-                  key={point}
-                  direction="up"
-                  index={index}
-                  staggerChildren={0.08}
-                  className="flex items-start gap-3 text-sm leading-relaxed text-slate-600 sm:text-base"
-                >
-                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#f3b005] text-white">
-                    <LuCheck size={20} strokeWidth={3} />
-                  </span>
-                  {point}
-                </ScrollReveal>
-              ))}
-            </ul>
-          </ScrollReveal>
-        </div>
-      </section>
+            <ScrollReveal
+              as="div"
+              direction="left"
+              mobileDirection="up"
+              className="min-w-0"
+            >
+              <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#09295f] sm:text-4xl lg:text-5xl">
+                {detail.overviewTitle}
+              </h2>
+              <span className="mt-3 block h-[3px] w-12 bg-[#fdb913]" />
+              <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
+                {detail.overviewDescription}
+              </p>
+              <ul className="mt-5 space-y-2.5">
+                {detail.overviewPoints.map((point, index) => (
+                  <ScrollReveal
+                    as="li"
+                    key={point}
+                    direction="up"
+                    index={index}
+                    staggerChildren={0.08}
+                    className="flex items-start gap-3 text-sm leading-relaxed text-slate-600 sm:text-base"
+                  >
+                    <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#f3b005] text-white">
+                      <LuCheck size={20} strokeWidth={3} />
+                    </span>
+                    {point}
+                  </ScrollReveal>
+                ))}
+              </ul>
+            </ScrollReveal>
+          </div>
+        </section>
       </ScrollReveal>
-
     </>
   );
 }

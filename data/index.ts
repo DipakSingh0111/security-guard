@@ -332,4 +332,6 @@ export function getShippingData(): SecurityShippingData {
   return sec.Legal.variants.SecurityShipping1;
 }
 
+export const siteData = securityData;
+
 export default securityData;

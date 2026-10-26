@@ -8,7 +8,11 @@ export default function ServicesPage() {
 
   return (
     <>
-      <PageBanner title={banner.title} image={banner.image} items={banner.items} />
+      <PageBanner
+        title={banner.title}
+        image={banner.image}
+        items={banner.items}
+      />
       <ServiceSection showAll />
       <SecurityCta />
     </>

@@ -32,20 +32,20 @@ export default function ClientsPage() {
               return (
                 <div
                   key={client.name}
-                  className="group flex flex-col items-center justify-between rounded-xl border border-gray-200 bg-white p-6 shadow-[0_4px_16px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#fdb913] hover:shadow-xl"
+                  className="group flex flex-col items-center justify-between rounded-lg border border-gray-300/80 bg-white p-5 shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-all duration-300 hover:shadow-lg"
                 >
-                  <div className="relative flex h-36 w-full items-center justify-center p-3">
+                  <div className="relative flex aspect-square w-full items-center justify-center p-2">
                     <Image
                       src={client.logo}
                       alt={client.name}
-                      width={220}
-                      height={120}
+                      width={300}
+                      height={300}
                       unoptimized={isSvg}
-                      className="h-auto max-h-28 w-auto max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                      className="h-full w-full object-contain p-2 transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
-                  <div className="mt-4 w-full border-t border-gray-100 pt-3 text-center">
-                    <p className="line-clamp-2 text-xs font-semibold leading-tight text-[#a32a2a] sm:text-sm">
+                  <div className="mt-2 w-full pt-2 text-center">
+                    <p className="line-clamp-2 text-xs font-medium leading-snug text-[#9c2424] sm:text-[13px]">
                       {client.subtitle}
                     </p>
                   </div>

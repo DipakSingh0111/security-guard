@@ -16,7 +16,12 @@ import {
   LuUsers,
 } from "react-icons/lu";
 import type { IconType } from "react-icons";
-import { getHomeServices, getServices, getServicesPageSize, site } from "@/data";
+import {
+  getHomeServices,
+  getServices,
+  getServicesPageSize,
+  site,
+} from "@/data";
 import ScrollReveal from "../shared/ScrollReveal";
 
 /* Maps the icon strings used in siteData.json to react-icons */
@@ -60,7 +65,9 @@ function SectionLabel({
         ? "text-white"
         : "text-[#06194a]";
   return (
-    <div className={`flex items-center gap-3 ${center ? "justify-center" : ""}`}>
+    <div
+      className={`flex items-center gap-3 ${center ? "justify-center" : ""}`}
+    >
       <span className="h-0.5 w-8 bg-[#fdb913] sm:w-10" />
       <span
         className={`text-xs font-bold uppercase sm:text-[13px] lg:text-[17px] ${color}`}
@@ -119,7 +126,11 @@ export default function SecurityServices({
         />
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <ScrollReveal as="div" direction="up" className="mx-auto max-w-4xl text-center">
+          <ScrollReveal
+            as="div"
+            direction="up"
+            className="mx-auto max-w-4xl text-center"
+          >
             <SectionLabel text={s.badge} center />
             <h2 className="mt-3 text-3xl font-bold leading-tight text-[#06194a] sm:text-4xl lg:text-[49px]">
               {s.title.normal}{" "}

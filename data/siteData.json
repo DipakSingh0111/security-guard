@@ -272,7 +272,7 @@
               }
             ],
             "button": {
-              "label": "About",
+              "label": "Read More",
               "href": "/about",
               "icon": "arrow-right"
             }
@@ -1874,58 +1874,43 @@
             "images": [
               {
                 "id": 1,
-                "title": "Guard Team On Duty",
-                "image": "/security/guard1.jpg"
-              },
-              {
-                "id": 2,
-                "title": "Corporate Gate Security",
-                "image": "/security/guard2.jpg"
-              },
-              {
-                "id": 3,
-                "title": "Patrol Team Assembly",
+                "title": "Corporate Guard On Duty",
                 "image": "/security/guard3.jpg"
               },
               {
-                "id": 4,
-                "title": "Residential Society Security",
+                "id": 2,
+                "title": "Industrial Premises Security",
                 "image": "/security/guard4.jpg"
               },
               {
-                "id": 5,
-                "title": "Professional Guard In Uniform",
+                "id": 3,
+                "title": "Professional Security Force",
                 "image": "/security/guard5.jpg"
               },
               {
-                "id": 6,
-                "title": "Access Control Duty",
-                "image": "/security/guard6.jpg"
-              },
-              {
-                "id": 7,
-                "title": "Site Security Patrol",
-                "image": "/security/guard7.jpg"
-              },
-              {
-                "id": 8,
-                "title": "Event Security Cover",
-                "image": "/security/guard8.jpg"
-              },
-              {
-                "id": 9,
-                "title": "Security Briefing Session",
-                "image": "/security/guard9.jpg"
-              },
-              {
-                "id": 10,
-                "title": "Industrial Premises Security",
+                "id": 4,
+                "title": "Access Control & Guarding",
                 "image": "/security/guard10.jpg"
               },
               {
-                "id": 11,
-                "title": "24/7 Monitoring Support",
+                "id": 5,
+                "title": "24/7 Security Patrol Unit",
                 "image": "/security/guard11.jpg"
+              },
+              {
+                "id": 6,
+                "title": "Residential Society Guard",
+                "image": "/HeroBanner_01.jpg"
+              },
+              {
+                "id": 7,
+                "title": "VIP Protection Escort",
+                "image": "/HeroBanner.jpg"
+              },
+              {
+                "id": 8,
+                "title": "Central Security Monitoring",
+                "image": "/page-banner.jpg"
               }
             ],
             "loadMoreLabel": "Load More"
@@ -2135,64 +2120,84 @@
             "sectionHeading": "OUR CLIENTS",
             "clients": [
               {
+                "name": "Sajawat",
+                "logo": "/clients/sajawat.png",
+                "subtitle": "Sajawat"
+              },
+              {
+                "name": "Delhivery India Pvt. Ltd",
+                "logo": "/clients/Delhivery.png",
+                "subtitle": "Delhivery India Pvt. Ltd"
+              },
+              {
+                "name": "Israel Aerospace India Pvt. Ltd.",
+                "logo": "/clients/israel.png",
+                "subtitle": "Israel Aerospace India Pvt. Ltd."
+              },
+              {
                 "name": "Sunbeam Auto Pvt. Ltd., Gurugram",
-                "logo": "/clients/sunbeam.svg",
+                "logo": "/clients/sunbean.png",
                 "subtitle": "Sunbeam Auto Pvt. Ltd., Gurugram"
               },
               {
                 "name": "ITC Hotel Taj Ganj, Agra",
-                "logo": "/clients/ITC-Hotel-Taj.jpg",
+                "logo": "/clients/hotels-logo.png",
                 "subtitle": "ITC Hotel Taj Ganj, Agra"
               },
               {
                 "name": "Hindustan Petroleum Corporation Ltd., Delhi",
-                "logo": "/clients/HP.webp",
+                "logo": "/clients/Hinduatan.png",
                 "subtitle": "Hindustan Petroleum Corporation Ltd., Delhi"
               },
               {
                 "name": "Unnati Fortune Group",
-                "logo": "/clients/Unnati-Fortune-Group-logo.webp",
+                "logo": "/clients/unnati.png",
                 "subtitle": "Unnati Fortune Group"
               },
               {
                 "name": "Indian Oil Corporation Limited, Delhi",
-                "logo": "/clients/indian-oil.png",
+                "logo": "/clients/Indian.png",
                 "subtitle": "Indian Oil Corporation Limited, Delhi"
               },
               {
-                "name": "Delhi Development Authority (DDA)",
-                "logo": "/clients/Delhi_Development_Authority.webp",
-                "subtitle": "Delhi Development Authority"
-              },
-              {
-                "name": "Rafael Advanced Defense Systems",
-                "logo": "/clients/Rafael.webp",
-                "subtitle": "Rafael Advanced Defense"
-              },
-              {
                 "name": "Elbit Systems",
-                "logo": "/clients/Elbit_Systems.svg",
+                "logo": "/clients/logo1.png",
                 "subtitle": "Elbit Systems"
               },
               {
-                "name": "National Institute of Technology (NIT)",
-                "logo": "/clients/National-Institute-of-Technology.jpg",
-                "subtitle": "National Institute of Technology"
+                "name": "Delhi Development Authority (DDA)",
+                "logo": "/clients/logo2.png",
+                "subtitle": "Delhi Development Authority"
               },
               {
                 "name": "Centre for Development of Telematics (C-DOT)",
-                "logo": "/clients/cdotindia_logo.jpg",
+                "logo": "/clients/logo3.png",
                 "subtitle": "C-DOT India"
               },
               {
+                "name": "National Institute of Technology (NIT)",
+                "logo": "/clients/logo4.png",
+                "subtitle": "National Institute of Technology"
+              },
+              {
                 "name": "Oriental Bank of Commerce",
-                "logo": "/clients/Oriental-Bank-of-Commerce.jpeg",
+                "logo": "/clients/logo5.png",
                 "subtitle": "Oriental Bank of Commerce"
               },
               {
                 "name": "Mira Model School",
-                "logo": "/clients/mira-model-school.png",
+                "logo": "/clients/logo6.png",
                 "subtitle": "Mira Model School"
+              },
+              {
+                "name": "Grand Columbus International School",
+                "logo": "/clients/logo7.png",
+                "subtitle": "Grand Columbus International School"
+              },
+              {
+                "name": "Rafael Advanced Defense Systems",
+                "logo": "/clients/logo8.png",
+                "subtitle": "Rafael Advanced Defense"
               }
             ]
           }
