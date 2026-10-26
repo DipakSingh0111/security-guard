@@ -43,7 +43,7 @@ export default function EnquiryPage() {
     }, 700);
   };
 
-  const { banner, fields, sections, serviceOptions, shiftOptions, success, helpline } =
+  const { banner, fields, sections, serviceOptions, shiftOptions, success } =
     data;
 
   return (
@@ -245,7 +245,7 @@ export default function EnquiryPage() {
                   />
                 </div>
 
-                <div className="flex flex-wrap items-center justify-between gap-4 pt-2 text-center sm:text-left">
+                <div className="pt-2 text-center sm:text-left">
                   <button
                     type="submit"
                     disabled={loading}
@@ -256,28 +256,9 @@ export default function EnquiryPage() {
                     </span>
                     <Send size={16} />
                   </button>
-                  <div className="flex items-center gap-2 text-xs font-semibold text-gray-500">
-                    <ShieldCheck size={18} className="text-emerald-600" />
-                    {data.trustText}
-                  </div>
                 </div>
               </form>
             )}
-
-            <div className="mt-10 flex flex-col items-center justify-between gap-4 rounded-2xl bg-[#06194a] p-5 text-white sm:flex-row">
-              <div>
-                <p className="text-xs font-bold uppercase tracking-wider text-[#fdb913]">
-                  {helpline.title}
-                </p>
-                <p className="text-sm text-gray-200">{helpline.description}</p>
-              </div>
-              <a
-                href={helpline.phoneHref}
-                className="shrink-0 rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-white hover:text-[#06194a]"
-              >
-                {helpline.phoneLabel}
-              </a>
-            </div>
           </div>
         </div>
       </section>

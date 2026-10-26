@@ -23,7 +23,7 @@ export default function Banner({
   return (
     <ScrollReveal direction="up">
     <section
-      className={`relative mt-8 isolate flex items-center overflow-hidden bg-[#06194a] sm:mt-10 min-h-[420px] sm:min-h-[440px]`}
+      className={`relative mt-8 isolate flex items-center overflow-hidden bg-[#06194a] sm:mt-10 min-h-[380px] sm:min-h-[420px] lg:min-h-[460px]`}
     >
 
       {/* Background Image */}
@@ -40,7 +40,7 @@ export default function Banner({
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/20 pointer-events-none" />
 
       {/* Content */}
-      <div className="relative mx-auto px-4 py-20 sm:px-6 lg:px-8">
+      <div className="relative mx-auto px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div className="flex flex-col justify-center gap-4">
           {/* Title */}
           <h1
