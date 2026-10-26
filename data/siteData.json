@@ -2135,21 +2135,6 @@
             "sectionHeading": "OUR CLIENTS",
             "clients": [
               {
-                "name": "Sajawat",
-                "logo": "/clients/sajawat.svg",
-                "subtitle": "Sajawat"
-              },
-              {
-                "name": "Delhivery India Pvt. Ltd",
-                "logo": "/clients/delhivery.svg",
-                "subtitle": "Delhivery India Pvt. Ltd"
-              },
-              {
-                "name": "Israel Aerospace India Pvt. Ltd.",
-                "logo": "/clients/iai.svg",
-                "subtitle": "Israel Aerospace India Pvt. Ltd."
-              },
-              {
                 "name": "Sunbeam Auto Pvt. Ltd., Gurugram",
                 "logo": "/clients/sunbeam.svg",
                 "subtitle": "Sunbeam Auto Pvt. Ltd., Gurugram"
