@@ -1,0 +1,2786 @@
+{
+  "SecurityIndustries": {
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "Topbar": "SecurityTopbar1",
+          "Header": "SecurityHeader1",
+          "Footer": "SecurityFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "Banner",
+                "component": "SecurityBanner1"
+              },
+              {
+                "key": "About",
+                "component": "SecurityAbout1"
+              },
+              {
+                "key": "Services",
+                "component": "SecurityServices1"
+              },
+              {
+                "key": "Stats",
+                "component": "SecurityStats1"
+              },
+              {
+                "key": "Testimonial",
+                "component": "SecurityTestimonial1"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "sections": {
+      "Topbar": {
+        "variants": {
+          "SecurityTopbar1": {
+            "phone": "+91-7503105661",
+            "phoneHref": "tel:+917503105661",
+            "email": "hq@vjsecurity.co.in",
+            "emailHref": "mailto:hq@vjsecurity.co.in",
+            "supportText": "Mon - Sat: 09:00 - 19:00 | 24/7 Security",
+            "supportIcon": "clock"
+          }
+        }
+      },
+      "Header": {
+        "variants": {
+          "SecurityHeader1": {
+            "site": {
+              "siteName": "VJ SECURITY",
+              "tagline": "VIKAS JOSHI SECURITY AGENCY",
+              "logo": {
+                "light": "/security_logo.png",
+                "normal": "/security_logo.png",
+                "alt": "2803 Vikas Joshi Security Agency (VJ-Security)"
+              }
+            },
+            "meta": {
+              "siteTitle": "VJ Security | 2803 Vikas Joshi Security Agency",
+              "siteDescription": "We secure peace of your mind. Professional security guard, armed guard, PSO, VIP protection and manpower solutions led by Col. Vikas Joshi (Retd.).",
+              "keywords": [
+                "VJ Security",
+                "Vikas Joshi Security Agency",
+                "security guard services",
+                "armed guards",
+                "unarmed guards",
+                "personal security officer",
+                "PSO security",
+                "event security",
+                "VIP protection",
+                "facility management",
+                "Noida security services",
+                "Delhi security agency"
+              ]
+            },
+            "nav": [
+              {
+                "label": "HOME",
+                "href": "/"
+              },
+              {
+                "label": "ABOUT US",
+                "href": "/about"
+              },
+              {
+                "label": "SERVICES",
+                "href": "/services",
+                "children": [
+                  {
+                    "label": "UNARMED GUARD",
+                    "href": "/services/unarmed-guard"
+                  },
+                  {
+                    "label": "PERSONAL SECURITY OFFICER",
+                    "href": "/services/personal-security-officer"
+                  },
+                  {
+                    "label": "VEHICLE SECURITY",
+                    "href": "/services/vehicle-security"
+                  },
+                  {
+                    "label": "EVENTS SECURITY",
+                    "href": "/services/events-security"
+                  },
+                  {
+                    "label": "SECURITY ANALYSIS",
+                    "href": "/services/security-analysis"
+                  },
+                  {
+                    "label": "SECURITY AUDIT",
+                    "href": "/services/security-audit"
+                  },
+                  {
+                    "label": "CONSULTANCY SERVICE",
+                    "href": "/services/consultancy-service"
+                  },
+                  {
+                    "label": "FACILITIES MANAGEMENT",
+                    "href": "/services/facilities-management"
+                  },
+                  {
+                    "label": "MANPOWER SOLUTION",
+                    "href": "/services/manpower-solution"
+                  }
+                ]
+              },
+              {
+                "label": "OUR CLIENTS",
+                "href": "/clients"
+              },
+              {
+                "label": "CAREERS",
+                "href": "/careers"
+              },
+              {
+                "label": "DOCUMENT",
+                "href": "/document"
+              },
+              {
+                "label": "CONTACT US",
+                "href": "/contact"
+              }
+            ],
+            "buttons": [
+              {
+                "label": "Enquiry",
+                "href": "/enquiry",
+                "icon": "arrow-right",
+                "variant": "primary"
+              }
+            ],
+            "mobileMenu": {
+              "openLabel": "Open menu",
+              "closeLabel": "Close menu",
+              "viewAllLabel": "View All"
+            }
+          }
+        }
+      },
+      "Banner": {
+        "variants": {
+          "SecurityBanner1": {
+            "autoplay": true,
+            "interval": 6000,
+            "slides": [
+              {
+                "id": 1,
+                "badge": "WE SECURE PEACE OF YOUR MIND",
+                "title": {
+                  "normal": "2803 Vikas Joshi",
+                  "highlighted": "Security Agency",
+                  "postTitle": "(VJ-Security)"
+                },
+                "image": {
+                  "src": "/Hero_01.jpg",
+                  "alt": "2803 Vikas Joshi Security Agency banner"
+                }
+              },
+              {
+                "id": 2,
+                "badge": "DEFENCE DISCIPLINE & EXCELLENCE",
+                "title": {
+                  "normal": "Trained & Armed",
+                  "highlighted": "Security Force",
+                  "postTitle": "Across India"
+                },
+                "image": {
+                  "src": "/Hero_01.jpg",
+                  "alt": "VJ Security professional armed guards and marshals"
+                }
+              },
+              {
+                "id": 3,
+                "badge": "YOUR SAFETY, OUR COMMITMENT",
+                "title": {
+                  "normal": "Elite Guarding &",
+                  "highlighted": "VIP Protection",
+                  "postTitle": "Services"
+                },
+                "image": {
+                  "src": "/Hero_01.jpg",
+                  "alt": "VJ Security elite protection services"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "About": {
+        "variants": {
+          "SecurityAbout1": {
+            "banner": {
+              "title": "About Us",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "About Us"
+                }
+              ]
+            },
+            "badge": "ABOUT",
+            "title": {
+              "normal": "We Secure Peace of",
+              "highlighted": "Your Mind"
+            },
+            "paragraphs": [
+              "Established in the year of 2006, we \"VJ SECURITY\" are known to be among the most eminent organizations involved in offering a broad array of Security and Manpower Services. Our provided range of services consists of Security Services, Personal Security Services and many more. We are providing these services with the help of well qualified and experienced professionals as per the client's requirements and needs. As we are offering a diverse array of services so we have recruited experts of each domain and these experts provide best and perfect services for our customers.",
+              "VJ security is now making your environment, your employees, your assets and your loved ones more secure so that you can focus on your core businesses. By understanding our responsibilities to this profession and society, we devote all our time for better understanding the market and the needs of our customers - both current and future and simultaneously design and develop better solutions with different value chains for various customer groups.",
+              "Under the assistance of our mentor Col Vikas Joshi (Retd), we are able to be a trusted and prominent organization of this domain in the short period of time. His vast industry experience and knowledge enable to serve our clients in the best manner."
+            ],
+            "image": {
+              "src": "/security/guard5.jpg",
+              "alt": "VJ Security professional security personnel on duty"
+            },
+            "features": [
+              {
+                "id": 1,
+                "number": "01",
+                "icon": "user-shield",
+                "title": "Ex-Defence Leadership",
+                "description": "Mentored by Col. Vikas Joshi (Retd.) with military-grade precision and discipline."
+              },
+              {
+                "id": 2,
+                "number": "02",
+                "icon": "shield-check",
+                "title": "PSARA & DGR Compliant",
+                "description": "Licensed under PSARA across multiple states with complete statutory compliance."
+              },
+              {
+                "id": 3,
+                "number": "03",
+                "icon": "cctv",
+                "title": "Elite Handpicked PSOs",
+                "description": "Personal Security Officers selected from specialized elite regiments of the armed forces."
+              },
+              {
+                "id": 4,
+                "number": "04",
+                "icon": "users",
+                "title": "VJ Skills Training",
+                "description": "Dedicated training centers ensuring continuous skill enhancement and professional conduct."
+              }
+            ],
+            "button": {
+              "label": "About",
+              "href": "/about",
+              "icon": "arrow-right"
+            }
+          }
+        }
+      },
+      "Services": {
+        "variants": {
+          "SecurityServices1": {
+            "banner": {
+              "title": "Our Services",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Services"
+                }
+              ]
+            },
+            "detailBanner": {
+              "title": "Service Detail",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Service Detail",
+                  "href": "/services"
+                }
+              ]
+            },
+            "badge": "SERVICES",
+            "title": {
+              "normal": "Our",
+              "highlighted": "Services",
+              "postTitle": ""
+            },
+            "desc": "VJ Security provides comprehensive guarding, VIP protection, vehicle and event security, analysis, audits, consultancy, facilities management and manpower solutions.",
+            "homeVisibleCount": 3,
+            "pageVisibleCount": 6,
+            "services": [
+              {
+                "id": 1,
+                "slug": "armed-guard",
+                "icon": "shield-check",
+                "image": "/security/guard5.jpg",
+                "title": "Armed Guard Services",
+                "description": "VJ Security is licensed to offer clients armed protective services. In response to changing requirements in the world of security, VJ Security has obtained a Firearms Business license. Experienced security guard staff who exhibit the exemplary qualities required to deliver armed services are routinely identified and encouraged to complete the Certificate of Proficiency in Firearms Training and the Authorization to Carry Firearms certificate.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/armed-guard"
+                }
+              },
+              {
+                "id": 2,
+                "slug": "unarmed-guard",
+                "icon": "user-shield",
+                "image": "/security/guard4.jpg",
+                "title": "Unarmed Guard Services",
+                "description": "VJ Security Service specializes in premiere site & event security for a host of industries and applications. We guarantee the availability of a uniformed security guard either unarmed, armed or even an off duty officer anytime of the day 24/7. We make sure to go above and to make sure you get the right person for the right job.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/unarmed-guard"
+                }
+              },
+              {
+                "id": 3,
+                "slug": "personal-security-officer",
+                "icon": "users",
+                "image": "/security/guard3.jpg",
+                "title": "Personal Security Officer Services",
+                "description": "VJ Security is to deliver reliable VIP protection anywhere around the globe at a moment's notice. Our services range from providing one-time personal protection to developing long-term comprehensive personnel and asset protection. Our Personal Security Services offer a variety of solutions for protecting your employees, property and assets. Our personal security solutions are tailored.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/personal-security-officer"
+                }
+              },
+              {
+                "id": 4,
+                "slug": "armed-marshal",
+                "icon": "footprints",
+                "image": "/security/guard10.jpg",
+                "title": "Armed Marshal Services",
+                "description": "Being one of the reputed organizations of the industry, we are offering an exclusive range of Security Services to our precious clients. These offered services are rendered using the modern technology under the supervision of skilled personnel. Arm Marshal Service is one of our modern technology service. These all services are useful for various places such as hospital, schools, industrial area...etc.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/armed-marshal"
+                }
+              },
+              {
+                "id": 5,
+                "slug": "vehicle-security",
+                "icon": "door-closed",
+                "image": "/security/guard11.jpg",
+                "title": "Vehicle Security Services",
+                "description": "Backed by the vast industrial experience we are engaged in offering a qualitative range of Vehicle Security Services. These services are offered for vehicle protection. VJ Security services offers professional vehicle services with extensively trained security officers and has a distinguished reputation, so that our valued clients can avail these services in unique options as per their requirement.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/vehicle-security"
+                }
+              },
+              {
+                "id": 6,
+                "slug": "events-security",
+                "icon": "users",
+                "image": "/security/guard4.jpg",
+                "title": "Events Security Services",
+                "description": "We are recognized for our security protection in high-profile events in the entertainment and sports sectors. VJ Security uses highly specialized, experienced personnel who partner with you to develop a comprehensive security plan tailored to your event's specific needs. From coordinating local law enforcement agencies and administrative authorities to planning for normal and worst case scenarios.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/events-security"
+                }
+              },
+              {
+                "id": 7,
+                "slug": "security-analysis",
+                "icon": "cctv",
+                "image": "/security/guard5.jpg",
+                "title": "Security Analysis Services",
+                "description": "The analysis of various tradable financial instruments is called security analysis. We are highly assessing in security analysing. We serve you the best as we want a long term relationship with our clients.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/security-analysis"
+                }
+              },
+              {
+                "id": 8,
+                "slug": "security-audit",
+                "icon": "shield-check",
+                "image": "/security/guard3.jpg",
+                "title": "Security Audit Services",
+                "description": "A Security Audit differs from a survey in that it is a process to assess whether an existing security system and procedures are operating to set of standards or criteria they were designed to. It evaluates the administration of the system, security awareness of employees, the management controls and compliance with standards. This is a valuable tool to give an accurate overview to the senior management.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/security-audit"
+                }
+              },
+              {
+                "id": 9,
+                "slug": "consultancy-service",
+                "icon": "cctv",
+                "image": "/security/guard10.jpg",
+                "title": "Consultancy Service",
+                "description": "VJ Security provides professional security consultancy to help clients plan safer operations, strengthen procedures and make informed protection decisions. Our consultancy approach supports dignitary visits, site planning and practical security frameworks aligned to your business needs.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/consultancy-service"
+                }
+              },
+              {
+                "id": 10,
+                "slug": "facilities-management",
+                "icon": "building",
+                "image": "/security/guard11.jpg",
+                "title": "Facilities Management",
+                "description": "VJ Security delivers facility management solutions designed for seamless, disruption-free operations. We support infrastructure and workplace environments with disciplined manpower and processes so clients can focus on their core business with peace of mind.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/facilities-management"
+                }
+              },
+              {
+                "id": 11,
+                "slug": "manpower-solution",
+                "icon": "users",
+                "image": "/security/guard5.jpg",
+                "title": "Manpower Solution",
+                "description": "Through trained and verified personnel, VJ Security provides manpower solutions aligned with industrial and organisational needs. We help clients deploy the right workforce for security and support roles with professional conduct and dependable coverage.",
+                "button": {
+                  "label": "Discover More",
+                  "href": "/services/manpower-solution"
+                }
+              }
+            ],
+            "details": [
+              {
+                "slug": "armed-guard",
+                "title": {
+                  "normal": "Armed Guard",
+                  "highlighted": "Services"
+                },
+                "description": "VJ Security is licensed to offer clients armed protective services. In response to changing requirements in the world of security, VJ Security has obtained a Firearms Business license. Experienced security guard staff who exhibit the exemplary qualities required to deliver armed services are routinely identified and encouraged to complete the Certificate of Proficiency in Firearms Training and the Authorization to Carry Firearms certificate.",
+                "heroImage": "/security/guard5.jpg",
+                "heroImageAlt": "Armed Guard Services",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard5.jpg",
+                "overviewImageAlt": "Armed Guard Services overview",
+                "overviewTitle": "Licensed Armed Protective Services",
+                "overviewDescription": "VJ Security is licensed to offer clients armed protective services. In response to changing requirements in the world of security, VJ Security has obtained a Firearms Business license. Experienced security guard staff who exhibit the exemplary qualities required to deliver armed services are routinely identified and encouraged to complete the Certificate of Proficiency in Firearms Training and the Authorization to Carry Firearms certificate.",
+                "overviewPoints": [
+                  "Firearms Business license for armed protective services",
+                  "Certificate of Proficiency in Firearms Training",
+                  "Authorization to Carry Firearms for selected staff",
+                  "Experienced guards screened for armed duty readiness",
+                  "Suitable for high-risk and sensitive assignments",
+                  "Strict compliance with statutory firearms regulations"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our armed guard services support your safety needs.",
+                "features": [
+                  {
+                    "icon": "shield",
+                    "title": "Licensed Armed Cover",
+                    "description": "Armed protective services delivered under valid firearms licensing."
+                  },
+                  {
+                    "icon": "user-check",
+                    "title": "Firearms-Trained Staff",
+                    "description": "Selected personnel encouraged to complete proficiency and carry authorisation."
+                  },
+                  {
+                    "icon": "clipboard",
+                    "title": "Compliance First",
+                    "description": "Armed deployments follow legal and operational standards."
+                  },
+                  {
+                    "icon": "clock",
+                    "title": "Ready Response",
+                    "description": "Experienced armed staff identified for demanding security needs."
+                  }
+                ]
+              },
+              {
+                "slug": "unarmed-guard",
+                "title": {
+                  "normal": "Unarmed Guard",
+                  "highlighted": "Services"
+                },
+                "description": "VJ Security Service specializes in premiere site & event security for a host of industries and applications. We guarantee the availability of a uniformed security guard either unarmed, armed or even an off duty officer anytime of the day 24/7. We make sure to go above and to make sure you get the right person for the right job.",
+                "heroImage": "/security/guard6.jpg",
+                "heroImageAlt": "Unarmed Guard Services",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard6.jpg",
+                "overviewImageAlt": "Unarmed Guard Services overview",
+                "overviewTitle": "Premiere Site & Event Guarding",
+                "overviewDescription": "VJ Security Service specializes in premiere site & event security for a host of industries and applications. We guarantee the availability of a uniformed security guard either unarmed, armed or even an off duty officer anytime of the day 24/7. We make sure to go above and to make sure you get the right person for the right job.",
+                "overviewPoints": [
+                  "Uniformed security for sites and events across industries",
+                  "24/7 availability of trained security personnel",
+                  "Right person matched to the right assignment",
+                  "Unarmed guarding with professional site discipline",
+                  "Support for commercial, residential and event locations",
+                  "Reliable coverage whenever you need it"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our unarmed guard services support your safety needs.",
+                "features": [
+                  {
+                    "icon": "users",
+                    "title": "Uniformed Presence",
+                    "description": "Visible, professional guards for sites and events."
+                  },
+                  {
+                    "icon": "clock",
+                    "title": "24/7 Availability",
+                    "description": "Guards available anytime of the day for continuous cover."
+                  },
+                  {
+                    "icon": "user-check",
+                    "title": "Right Fit Deployment",
+                    "description": "Personnel selected to match the needs of each job."
+                  },
+                  {
+                    "icon": "building",
+                    "title": "Multi-Industry Cover",
+                    "description": "Suitable for a host of industries and applications."
+                  }
+                ]
+              },
+              {
+                "slug": "personal-security-officer",
+                "title": {
+                  "normal": "Personal Security",
+                  "highlighted": "Officer Services"
+                },
+                "description": "VJ Security is to deliver reliable VIP protection anywhere around the globe at a moment's notice. Our services range from providing one-time personal protection to developing long-term comprehensive personnel and asset protection. Our Personal Security Services offer a variety of solutions for protecting your employees, property and assets. Our personal security solutions are tailored.",
+                "heroImage": "/security/guard8.jpg",
+                "heroImageAlt": "Personal Security Officer Services",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard8.jpg",
+                "overviewImageAlt": "Personal Security Officer Services overview",
+                "overviewTitle": "Reliable VIP & Close Protection",
+                "overviewDescription": "VJ Security is to deliver reliable VIP protection anywhere around the globe at a moment's notice. Our services range from providing one-time personal protection to developing long-term comprehensive personnel and asset protection. Our Personal Security Services offer a variety of solutions for protecting your employees, property and assets. Our personal security solutions are tailored.",
+                "overviewPoints": [
+                  "VIP protection available at short notice",
+                  "One-time and long-term personal protection plans",
+                  "Protection for employees, property and assets",
+                  "Tailored personal security solutions",
+                  "Comprehensive personnel and asset protection",
+                  "Discreet, professional close-protection approach"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our personal security officer services support your safety needs.",
+                "features": [
+                  {
+                    "icon": "shield",
+                    "title": "VIP Protection",
+                    "description": "Reliable close protection for dignitaries and executives."
+                  },
+                  {
+                    "icon": "users",
+                    "title": "Flexible Assignments",
+                    "description": "From one-time cover to long-term protection programmes."
+                  },
+                  {
+                    "icon": "user-check",
+                    "title": "Tailored Solutions",
+                    "description": "Personal security planned around your specific risks."
+                  },
+                  {
+                    "icon": "car",
+                    "title": "Asset & Personnel Cover",
+                    "description": "Protection spanning people, property and movements."
+                  }
+                ]
+              },
+              {
+                "slug": "armed-marshal",
+                "title": {
+                  "normal": "Armed Marshal",
+                  "highlighted": "Services"
+                },
+                "description": "Being one of the reputed organizations of the industry, we are offering an exclusive range of Security Services to our precious clients. These offered services are rendered using the modern technology under the supervision of skilled personnel. Arm Marshal Service is one of our modern technology service. These all services are useful for various places such as hospital, schools, industrial area...etc.",
+                "heroImage": "/security/guard9.jpg",
+                "heroImageAlt": "Armed Marshal Services",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard9.jpg",
+                "overviewImageAlt": "Armed Marshal Services overview",
+                "overviewTitle": "Armed Marshal Deployment",
+                "overviewDescription": "Being one of the reputed organizations of the industry, we are offering an exclusive range of Security Services to our precious clients. These offered services are rendered using the modern technology under the supervision of skilled personnel. Arm Marshal Service is one of our modern technology service. These all services are useful for various places such as hospital, schools, industrial area...etc.",
+                "overviewPoints": [
+                  "Exclusive armed marshal services for sensitive sites",
+                  "Delivered under supervision of skilled personnel",
+                  "Useful for hospitals, schools and industrial areas",
+                  "Modern operational approach with trained teams",
+                  "Strong on-ground presence for high-priority zones",
+                  "Trusted by clients needing elevated protection"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our armed marshal services support your safety needs.",
+                "features": [
+                  {
+                    "icon": "shield-check",
+                    "title": "Armed Marshals",
+                    "description": "Specialised marshal cover for elevated security needs."
+                  },
+                  {
+                    "icon": "building",
+                    "title": "Multi-Site Use",
+                    "description": "Ideal for hospitals, schools and industrial areas."
+                  },
+                  {
+                    "icon": "user-check",
+                    "title": "Skilled Supervision",
+                    "description": "Services delivered under experienced personnel oversight."
+                  },
+                  {
+                    "icon": "zap",
+                    "title": "Modern Operations",
+                    "description": "Contemporary methods for reliable site protection."
+                  }
+                ]
+              },
+              {
+                "slug": "vehicle-security",
+                "title": {
+                  "normal": "Vehicle Security",
+                  "highlighted": "Services"
+                },
+                "description": "Backed by the vast industrial experience we are engaged in offering a qualitative range of Vehicle Security Services. These services are offered for vehicle protection. VJ Security services offers professional vehicle services with extensively trained security officers and has a distinguished reputation, so that our valued clients can avail these services in unique options as per their requirement.",
+                "heroImage": "/security/guard7.jpg",
+                "heroImageAlt": "Vehicle Security Services",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard7.jpg",
+                "overviewImageAlt": "Vehicle Security Services overview",
+                "overviewTitle": "Professional Vehicle Protection",
+                "overviewDescription": "Backed by the vast industrial experience we are engaged in offering a qualitative range of Vehicle Security Services. These services are offered for vehicle protection. VJ Security services offers professional vehicle services with extensively trained security officers and has a distinguished reputation, so that our valued clients can avail these services in unique options as per their requirement.",
+                "overviewPoints": [
+                  "Dedicated vehicle protection services",
+                  "Extensively trained security officers",
+                  "Options tailored to client requirements",
+                  "Trusted reputation for vehicle security",
+                  "Support for transit and parked asset protection",
+                  "Flexible deployment based on operational needs"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our vehicle security services support your safety needs.",
+                "features": [
+                  {
+                    "icon": "car",
+                    "title": "Vehicle Protection",
+                    "description": "Focused security for vehicles and transit movements."
+                  },
+                  {
+                    "icon": "user-check",
+                    "title": "Trained Officers",
+                    "description": "Extensively trained staff for vehicle security duties."
+                  },
+                  {
+                    "icon": "settings",
+                    "title": "Custom Options",
+                    "description": "Unique service options as per client requirement."
+                  },
+                  {
+                    "icon": "shield",
+                    "title": "Trusted Delivery",
+                    "description": "Backed by industrial experience and strong reputation."
+                  }
+                ]
+              },
+              {
+                "slug": "events-security",
+                "title": {
+                  "normal": "Events Security",
+                  "highlighted": "Services"
+                },
+                "description": "We are recognized for our security protection in high-profile events in the entertainment and sports sectors. VJ Security uses highly specialized, experienced personnel who partner with you to develop a comprehensive security plan tailored to your event's specific needs. From coordinating local law enforcement agencies and administrative authorities to planning for normal and worst case scenarios.",
+                "heroImage": "/security/guard10.jpg",
+                "heroImageAlt": "Events Security Services",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard10.jpg",
+                "overviewImageAlt": "Events Security Services overview",
+                "overviewTitle": "High-Profile Event Protection",
+                "overviewDescription": "We are recognized for our security protection in high-profile events in the entertainment and sports sectors. VJ Security uses highly specialized, experienced personnel who partner with you to develop a comprehensive security plan tailored to your event's specific needs. From coordinating local law enforcement agencies and administrative authorities to planning for normal and worst case scenarios.",
+                "overviewPoints": [
+                  "Security for entertainment and sports events",
+                  "Specialised personnel for event planning",
+                  "Comprehensive plans tailored to each event",
+                  "Coordination with law enforcement and authorities",
+                  "Coverage for normal and worst-case scenarios",
+                  "End-to-end event security partnership"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our events security services support your safety needs.",
+                "features": [
+                  {
+                    "icon": "users",
+                    "title": "Event Specialists",
+                    "description": "Experienced personnel for high-profile gatherings."
+                  },
+                  {
+                    "icon": "clipboard",
+                    "title": "Tailored Plans",
+                    "description": "Security plans built around your event requirements."
+                  },
+                  {
+                    "icon": "radio",
+                    "title": "Authority Coordination",
+                    "description": "Coordination with local law enforcement and administrators."
+                  },
+                  {
+                    "icon": "shield",
+                    "title": "Scenario Ready",
+                    "description": "Preparation for normal operations and worst-case events."
+                  }
+                ]
+              },
+              {
+                "slug": "security-analysis",
+                "title": {
+                  "normal": "Security Analysis",
+                  "highlighted": "Services"
+                },
+                "description": "The analysis of various tradable financial instruments is called security analysis. We are highly assessing in security analysing. We serve you the best as we want a long term relationship with our clients.",
+                "heroImage": "/security/guard11.jpg",
+                "heroImageAlt": "Security Analysis Services",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard11.jpg",
+                "overviewImageAlt": "Security Analysis Services overview",
+                "overviewTitle": "Professional Security Analysis",
+                "overviewDescription": "The analysis of various tradable financial instruments is called security analysis. We are highly assessing in security analysing. We serve you the best as we want a long term relationship with our clients.",
+                "overviewPoints": [
+                  "Structured security analysis for client environments",
+                  "Assessment-focused approach to identify risks",
+                  "Insights that support safer operations",
+                  "Long-term partnership oriented delivery",
+                  "Clear reporting for decision makers",
+                  "Practical recommendations for improvement"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our security analysis services support your safety needs.",
+                "features": [
+                  {
+                    "icon": "clipboard",
+                    "title": "Risk Assessment",
+                    "description": "Careful analysis of security conditions and exposures."
+                  },
+                  {
+                    "icon": "message",
+                    "title": "Clear Reporting",
+                    "description": "Findings shared in a practical, actionable format."
+                  },
+                  {
+                    "icon": "shield-check",
+                    "title": "Client Focus",
+                    "description": "Service oriented toward long-term client relationships."
+                  },
+                  {
+                    "icon": "settings",
+                    "title": "Actionable Insights",
+                    "description": "Recommendations that help strengthen your security posture."
+                  }
+                ]
+              },
+              {
+                "slug": "security-audit",
+                "title": {
+                  "normal": "Security Audit",
+                  "highlighted": "Services"
+                },
+                "description": "A Security Audit differs from a survey in that it is a process to assess whether an existing security system and procedures are operating to set of standards or criteria they were designed to. It evaluates the administration of the system, security awareness of employees, the management controls and compliance with standards. This is a valuable tool to give an accurate overview to the senior management.",
+                "heroImage": "/security/guard4.jpg",
+                "heroImageAlt": "Security Audit Services",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard4.jpg",
+                "overviewImageAlt": "Security Audit Services overview",
+                "overviewTitle": "Standards-Based Security Audits",
+                "overviewDescription": "A Security Audit differs from a survey in that it is a process to assess whether an existing security system and procedures are operating to set of standards or criteria they were designed to. It evaluates the administration of the system, security awareness of employees, the management controls and compliance with standards. This is a valuable tool to give an accurate overview to the senior management.",
+                "overviewPoints": [
+                  "Audit of existing security systems and procedures",
+                  "Assessment against designed standards and criteria",
+                  "Evaluation of system administration and controls",
+                  "Review of employee security awareness",
+                  "Compliance checks against required standards",
+                  "Accurate overview for senior management"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our security audit services support your safety needs.",
+                "features": [
+                  {
+                    "icon": "clipboard",
+                    "title": "Standards Check",
+                    "description": "Assess whether systems operate to intended criteria."
+                  },
+                  {
+                    "icon": "users",
+                    "title": "Awareness Review",
+                    "description": "Evaluate employee security awareness and practices."
+                  },
+                  {
+                    "icon": "settings",
+                    "title": "Control Evaluation",
+                    "description": "Review management controls and system administration."
+                  },
+                  {
+                    "icon": "shield",
+                    "title": "Management Overview",
+                    "description": "Provide senior leadership with a clear audit picture."
+                  }
+                ]
+              },
+              {
+                "slug": "consultancy-service",
+                "title": {
+                  "normal": "Consultancy",
+                  "highlighted": "Service"
+                },
+                "description": "VJ Security provides professional security consultancy to help clients plan safer operations, strengthen procedures and make informed protection decisions. Our consultancy approach supports dignitary visits, site planning and practical security frameworks aligned to your business needs.",
+                "heroImage": "/security/guard3.jpg",
+                "heroImageAlt": "Consultancy Service",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard3.jpg",
+                "overviewImageAlt": "Consultancy Service overview",
+                "overviewTitle": "Security Consultancy & Advisory",
+                "overviewDescription": "VJ Security provides professional security consultancy to help clients plan safer operations, strengthen procedures and make informed protection decisions. Our consultancy approach supports dignitary visits, site planning and practical security frameworks aligned to your business needs.",
+                "overviewPoints": [
+                  "Advisory support for security planning",
+                  "Guidance for site and operational procedures",
+                  "Consultancy for visiting dignitaries and itineraries",
+                  "Practical frameworks for safer workplaces",
+                  "Recommendations aligned to client requirements",
+                  "Support from experienced security professionals"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our consultancy service support your safety needs.",
+                "features": [
+                  {
+                    "icon": "message",
+                    "title": "Expert Advice",
+                    "description": "Professional consultancy for security planning and decisions."
+                  },
+                  {
+                    "icon": "clipboard",
+                    "title": "Procedure Design",
+                    "description": "Support in strengthening site and operational procedures."
+                  },
+                  {
+                    "icon": "users",
+                    "title": "Visit Consultancy",
+                    "description": "Advisory cover for dignitary visits and travel itineraries."
+                  },
+                  {
+                    "icon": "shield-check",
+                    "title": "Business Alignment",
+                    "description": "Recommendations matched to your operational priorities."
+                  }
+                ]
+              },
+              {
+                "slug": "facilities-management",
+                "title": {
+                  "normal": "Facilities",
+                  "highlighted": "Management"
+                },
+                "description": "VJ Security delivers facility management solutions designed for seamless, disruption-free operations. We support infrastructure and workplace environments with disciplined manpower and processes so clients can focus on their core business with peace of mind.",
+                "heroImage": "/security/guard2.jpg",
+                "heroImageAlt": "Facilities Management",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard2.jpg",
+                "overviewImageAlt": "Facilities Management overview",
+                "overviewTitle": "Facility & Infrastructure Support",
+                "overviewDescription": "VJ Security delivers facility management solutions designed for seamless, disruption-free operations. We support infrastructure and workplace environments with disciplined manpower and processes so clients can focus on their core business with peace of mind.",
+                "overviewPoints": [
+                  "Facility management for smoother daily operations",
+                  "Disciplined manpower for workplace environments",
+                  "Support for infrastructure and site routines",
+                  "Process-driven delivery for consistency",
+                  "Solutions aimed at disruption-free operations",
+                  "Aligned with broader security and safety goals"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our facilities management support your safety needs.",
+                "features": [
+                  {
+                    "icon": "building",
+                    "title": "Facility Support",
+                    "description": "Operational support for workplaces and infrastructure."
+                  },
+                  {
+                    "icon": "users",
+                    "title": "Trained Manpower",
+                    "description": "Disciplined teams for reliable facility operations."
+                  },
+                  {
+                    "icon": "settings",
+                    "title": "Process Driven",
+                    "description": "Clear routines that keep sites running smoothly."
+                  },
+                  {
+                    "icon": "shield",
+                    "title": "Business Continuity",
+                    "description": "Helps clients focus on core work without disruption."
+                  }
+                ]
+              },
+              {
+                "slug": "manpower-solution",
+                "title": {
+                  "normal": "Manpower",
+                  "highlighted": "Solution"
+                },
+                "description": "Through trained and verified personnel, VJ Security provides manpower solutions aligned with industrial and organisational needs. We help clients deploy the right workforce for security and support roles with professional conduct and dependable coverage.",
+                "heroImage": "/security/guard1.jpg",
+                "heroImageAlt": "Manpower Solution",
+                "benefits": [
+                  {
+                    "icon": "shield",
+                    "label": "Professional Staff"
+                  },
+                  {
+                    "icon": "user-check",
+                    "label": "Vetted Personnel"
+                  },
+                  {
+                    "icon": "clipboard",
+                    "label": "Clear Procedures"
+                  },
+                  {
+                    "icon": "clock",
+                    "label": "Reliable Coverage"
+                  }
+                ],
+                "overviewImage": "/security/guard1.jpg",
+                "overviewImageAlt": "Manpower Solution overview",
+                "overviewTitle": "Professional Manpower Deployment",
+                "overviewDescription": "Through trained and verified personnel, VJ Security provides manpower solutions aligned with industrial and organisational needs. We help clients deploy the right workforce for security and support roles with professional conduct and dependable coverage.",
+                "overviewPoints": [
+                  "Manpower aligned to industrial and organisational needs",
+                  "Trained and verified personnel for deployment",
+                  "Support for security and related workforce roles",
+                  "Professional conduct and reliable coverage",
+                  "Flexible staffing based on client requirements",
+                  "Backed by VJ Security's operational discipline"
+                ],
+                "featuresTitle": "Key Features",
+                "featuresDescription": "How our manpower solution support your safety needs.",
+                "features": [
+                  {
+                    "icon": "users",
+                    "title": "Right Workforce",
+                    "description": "Personnel matched to role and site requirements."
+                  },
+                  {
+                    "icon": "user-check",
+                    "title": "Verified Staff",
+                    "description": "Trained and screened manpower for dependable delivery."
+                  },
+                  {
+                    "icon": "clock",
+                    "title": "Flexible Staffing",
+                    "description": "Coverage planned around your operational needs."
+                  },
+                  {
+                    "icon": "shield",
+                    "title": "Professional Conduct",
+                    "description": "Discipline-focused teams representing your workplace well."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "Industries": {
+        "variants": {
+          "SecurityIndustries1": {
+            "banner": {
+              "title": "Industries",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Industries"
+                }
+              ]
+            },
+            "heading": {
+              "badge": "INDUSTRY",
+              "title": "Industries We Serve"
+            },
+            "badge": "INDUSTRIES WE SERVE",
+            "title": {
+              "normal": "Diverse Sectors,",
+              "highlighted": "Reliable Security",
+              "postTitle": "Solutions"
+            },
+            "desc": "We provide trained and professional security guards to a wide range of industries, delivering customized security solutions to meet the unique needs of each sector.",
+            "features": [
+              {
+                "id": 1,
+                "icon": "check",
+                "title": "Industry-Specific Security Plans"
+              },
+              {
+                "id": 2,
+                "icon": "check",
+                "title": "Trained & Verified Security Personnel"
+              },
+              {
+                "id": 3,
+                "icon": "check",
+                "title": "Customizable Solutions"
+              },
+              {
+                "id": 4,
+                "icon": "check",
+                "title": "24/7 Support & Monitoring"
+              }
+            ],
+            "button": {
+              "label": "View More",
+              "href": "/industries",
+              "icon": "arrow-right"
+            },
+            "items": [
+              {
+                "id": 1,
+                "icon": "building",
+                "image": "/security/guard11.jpg",
+                "title": "Corporate & Commercial",
+                "description": "Offices, IT Parks, Business Centers, Corporate Buildings"
+              },
+              {
+                "id": 2,
+                "icon": "home",
+                "image": "/security/guard4.jpg",
+                "title": "Residential Societies",
+                "description": "Apartments, Gated Communities, Residential Complexes"
+              },
+              {
+                "id": 3,
+                "icon": "factory",
+                "image": "/security/guard5.jpg",
+                "title": "Industrial Sector",
+                "description": "Factories, Warehouses, Manufacturing Units"
+              },
+              {
+                "id": 4,
+                "icon": "hospital",
+                "image": "/security/guard6.jpg",
+                "title": "Healthcare Sector",
+                "description": "Hospitals, Clinics, Nursing Homes, Diagnostic Centers"
+              },
+              {
+                "id": 5,
+                "icon": "school",
+                "image": "/security/guard7.jpg",
+                "title": "Educational Institutions",
+                "description": "Schools, Colleges, Universities, Training Institutes"
+              },
+              {
+                "id": 6,
+                "icon": "shopping-bag",
+                "image": "/security/guard8.jpg",
+                "title": "Retail & Shopping",
+                "description": "Malls, Shopping Centers, Retail Stores, Showrooms"
+              },
+              {
+                "id": 7,
+                "icon": "hotel",
+                "image": "/security/guard9.jpg",
+                "title": "Hotels & Hospitality",
+                "description": "Hotels, Resorts, Restaurants, Banquet Halls"
+              },
+              {
+                "id": 8,
+                "icon": "landmark",
+                "image": "/security/guard10.jpg",
+                "title": "Government & Public Sector",
+                "description": "Government Offices, Public Buildings, Civic Facilities"
+              },
+              {
+                "id": 9,
+                "icon": "truck",
+                "image": "/security/guard7.jpg",
+                "title": "Logistics & Warehousing",
+                "description": "Logistics Hubs, Distribution Centers, Storage Facilities"
+              },
+              {
+                "id": 10,
+                "icon": "calendar",
+                "image": "/security/guard3.jpg",
+                "title": "Events & Exhibitions",
+                "description": "Exhibitions, Conferences, Events, Trade Shows"
+              },
+              {
+                "id": 11,
+                "icon": "plane",
+                "image": "/security/guard10.jpg",
+                "title": "Transportation & Aviation",
+                "description": "Airports, Metro Stations, Transport Hubs, Terminals"
+              },
+              {
+                "id": 12,
+                "icon": "warehouse",
+                "image": "/security/guard9.jpg",
+                "title": "Construction Sites",
+                "description": "Construction Projects, Infrastructure Sites, Development Areas"
+              }
+            ],
+            "carousel": {
+              "hasArrows": true,
+              "hasDots": true,
+              "activeDot": 1,
+              "totalDots": 5,
+              "gap": 16
+            }
+          }
+        }
+      },
+      "Stats": {
+        "variants": {
+          "SecurityStats1": {
+            "badge": "VJ SECURITY IMPACT",
+            "title": {
+              "normal": "Milestones Built on",
+              "highlighted": "Discipline & Trust"
+            },
+            "desc": "Since 2006, our commitment to armed forces standards has earned the confidence of industry leaders and institutions across the nation.",
+            "bgImage": "/security/guard4.jpg",
+            "stats": [
+              {
+                "id": 1,
+                "icon": "shield-check",
+                "number": 18,
+                "suffix": "+",
+                "label": "Years of Excellence"
+              },
+              {
+                "id": 2,
+                "icon": "users",
+                "number": 850,
+                "suffix": "+",
+                "label": "Trained & Verified Guards"
+              },
+              {
+                "id": 3,
+                "icon": "building",
+                "number": 250,
+                "suffix": "+",
+                "label": "Corporate & Govt Clients"
+              },
+              {
+                "id": 4,
+                "icon": "map-pin",
+                "number": 6,
+                "suffix": "+",
+                "label": "States PSARA Licensed"
+              }
+            ]
+          }
+        }
+      },
+      "Testimonial": {
+        "variants": {
+          "SecurityTestimonial1": {
+            "badge": "TESTIMONIALS",
+            "title": {
+              "normal": "What Our",
+              "highlighted": "Clients Say"
+            },
+            "desc": "Trusted by businesses, institutions and homeowners for our reliable and professional security guard services.",
+            "testimonialItems": [
+              {
+                "id": 1,
+                "name": "Amit Sharma",
+                "designation": "Facility Manager,",
+                "company": "Sharma Group, Noida",
+                "companyIcon": "building",
+                "image": "/security/guard5.jpg",
+                "rating": 5,
+                "quote": "VJ Security has been providing security guards at our office premises for over 2 years. Their team is highly professional, well-trained and very reliable. The guards are disciplined, punctual and always maintain a polite and helpful attitude. We are extremely satisfied with their service and highly recommend them."
+              },
+              {
+                "id": 2,
+                "name": "Priya Verma",
+                "designation": "HR Manager,",
+                "company": "Verma Industries, Gurgaon",
+                "companyIcon": "building",
+                "image": "/security/guard11.jpg",
+                "rating": 5,
+                "quote": "We have been very happy with the security services provided by VJ Security. Their guards are professional, attentive and well-trained. The team is responsive to our requirements and maintains excellent discipline across our premises. We highly appreciate their service and support."
+              },
+              {
+                "id": 3,
+                "name": "Rajiv Mehta",
+                "designation": "Operations Head,",
+                "company": "Mehta Business Park, Delhi",
+                "companyIcon": "building",
+                "image": "/security/guard10.jpg",
+                "rating": 5,
+                "quote": "VJ Security has helped us maintain a safe and secure environment for our employees and visitors. Their security personnel are punctual, responsible and well-mannered. The management team is also very cooperative and quick to respond whenever we need assistance."
+              }
+            ],
+            "carousel": {
+              "hasArrows": true,
+              "hasDots": true,
+              "activeDot": 1,
+              "totalDots": 3
+            }
+          }
+        }
+      },
+      "Cta": {
+        "variants": {
+          "SecurityCta1": {
+            "badge": "GET PROFESSIONAL SECURITY TODAY",
+            "title": {
+              "normal": "Your Safety",
+              "highlighted": "Is Our Priority"
+            },
+            "desc": "Trusted security guards, customized security solutions and 24/7 support to keep your people, property and business safe.",
+            "bgImage": "/security/guard9.jpg",
+            "image": "/security/guard5.jpg",
+            "button": {
+              "label": "Contact Us Now",
+              "href": "/contact",
+              "icon": "arrow-right"
+            }
+          }
+        }
+      },
+      "Footer": {
+        "variants": {
+          "SecurityFooter1": {
+            "bgImage": "/security/guard4.jpg",
+            "logoImage": "/security_logo.png",
+            "logoAlt": "2803 Vikas Joshi Security Agency (VJ-Security)",
+            "siteName": "VJ SECURITY",
+            "tagline": "VIKAS JOSHI SECURITY AGENCY",
+            "desc": "2803 Vikas Joshi Security Agency (VJ-Security). Mentored by Col. Vikas Joshi (Retd.). Registered with DGR (Ministry of Defence) & PSARA licensed across India. We secure peace of your mind.",
+            "socialLinks": [
+              {
+                "label": "facebook",
+                "href": "https://www.facebook.com/"
+              },
+              {
+                "label": "instagram",
+                "href": "https://www.instagram.com/"
+              },
+              {
+                "label": "linkedin",
+                "href": "https://www.linkedin.com/"
+              },
+              {
+                "label": "youtube",
+                "href": "https://www.youtube.com/"
+              }
+            ],
+            "columns": [
+              {
+                "title": "Quick Links",
+                "links": [
+                  {
+                    "label": "HOME",
+                    "href": "/"
+                  },
+                  {
+                    "label": "ABOUT US",
+                    "href": "/about"
+                  },
+                  {
+                    "label": "SERVICES",
+                    "href": "/services"
+                  },
+                  {
+                    "label": "OUR CLIENTS",
+                    "href": "/clients"
+                  },
+                  {
+                    "label": "CAREERS",
+                    "href": "/careers"
+                  },
+                  {
+                    "label": "DOCUMENT",
+                    "href": "/document"
+                  },
+                  {
+                    "label": "CONTACT US",
+                    "href": "/contact"
+                  }
+                ]
+              },
+              {
+                "title": "Our Services",
+                "links": [
+                  {
+                    "label": "Unarmed Guard Services",
+                    "href": "/services/unarmed-guard"
+                  },
+                  {
+                    "label": "Personal Security Officer",
+                    "href": "/services/personal-security-officer"
+                  },
+                  {
+                    "label": "Vehicle Security Services",
+                    "href": "/services/vehicle-security"
+                  },
+                  {
+                    "label": "Events Security Services",
+                    "href": "/services/events-security"
+                  },
+                  {
+                    "label": "Security Analysis Services",
+                    "href": "/services/security-analysis"
+                  },
+                  {
+                    "label": "Security Audit Services",
+                    "href": "/services/security-audit"
+                  },
+                  {
+                    "label": "Consultancy Service",
+                    "href": "/services/consultancy-service"
+                  },
+                  {
+                    "label": "Facilities Management",
+                    "href": "/services/facilities-management"
+                  },
+                  {
+                    "label": "Manpower Solution",
+                    "href": "/services/manpower-solution"
+                  }
+                ]
+              }
+            ],
+            "footerContact": {
+              "title": "Headquarters & Contact",
+              "items": [
+                {
+                  "icon": "map-pin",
+                  "lines": [
+                    {
+                      "text": "Urbtech Trade Centre, Unit No-627, B-35,"
+                    },
+                    {
+                      "text": "Sector-132, Noida Expressway, UP - 201304"
+                    }
+                  ]
+                },
+                {
+                  "icon": "phone",
+                  "lines": [
+                    {
+                      "text": "+91-7503105661",
+                      "href": "tel:+917503105661"
+                    }
+                  ]
+                },
+                {
+                  "icon": "mail",
+                  "lines": [
+                    {
+                      "text": "hq@vjsecurity.co.in",
+                      "href": "mailto:hq@vjsecurity.co.in"
+                    }
+                  ]
+                },
+                {
+                  "icon": "clock",
+                  "lines": [
+                    {
+                      "text": "Mon - Sat: 09:00 AM - 07:00 PM"
+                    },
+                    {
+                      "text": "Control Room: 24/7 Active"
+                    }
+                  ]
+                }
+              ]
+            },
+            "copyright": {
+              "prefix": "© Copyright 2026",
+              "brand": "2803 Vikas Joshi Security Agency (VJ-Security). ",
+              "suffix": "All Rights Reserved."
+            },
+            "backToTop": true,
+            "backToTopLabel": "Back to top",
+            "policyLinks": [
+              {
+                "label": "Terms and Conditions",
+                "href": "/terms-and-conditions"
+              },
+              {
+                "label": "Privacy Policy",
+                "href": "/privacy-policy"
+              },
+              {
+                "label": "Refund and Cancellation Policy",
+                "href": "/refund-and-cancellation-policy"
+              },
+              {
+                "label": "Shipping and Delivery Policy",
+                "href": "/shipping-and-delivery-policy"
+              }
+            ],
+            "designCredit": {
+              "prefix": "Design By:",
+              "brand": ""
+            }
+          }
+        }
+      },
+      "Mission": {
+        "variants": {
+          "SecurityMission1": {
+            "badge": "OUR MISSION & VISION",
+            "title": {
+              "normal": "Our Commitment to a",
+              "highlighted": "Safer Tomorrow"
+            },
+            "desc": "At VJ Security, our mission, vision and goals reflect our dedication to creating safer environments for people, property and businesses through reliable security solutions and professional service.",
+            "image": "/security/guard5.jpg",
+            "items": [
+              {
+                "id": 1,
+                "title": "Our Mission",
+                "description": "To provide cutting-edge security solutions that ensure the safety, reliability and peace of mind of our clients. We are committed to innovation, excellence and building trust through professional and proactive security services.",
+                "icon": "target"
+              },
+              {
+                "id": 2,
+                "title": "Our Vision",
+                "description": "To be a leading and most trusted security service provider, recognized for our integrity, technology-driven solutions and unwavering commitment to creating safer communities, workplaces and public spaces.",
+                "icon": "eye"
+              }
+            ]
+          }
+        }
+      },
+      "Team": {
+        "variants": {
+          "SecurityTeam1": {
+            "banner": {
+              "title": "Our Team",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Our Team"
+                }
+              ]
+            },
+            "detailBanner": {
+              "title": "Team Member",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Our Team",
+                  "href": "/team"
+                },
+                {
+                  "label": "Team Member"
+                }
+              ]
+            },
+            "heading": {
+              "badge": "OUR TEAM",
+              "title": "Meet Our Security Professionals"
+            },
+            "members": [
+              {
+                "id": 1,
+                "slug": "arvind-sharma",
+                "name": "Arvind Sharma",
+                "position": "Chief Security Officer",
+                "image": "/people/man1.png"
+              },
+              {
+                "id": 2,
+                "slug": "priya-singh",
+                "name": "Priya Singh",
+                "position": "Operations Manager",
+                "image": "/people/women1.png"
+              },
+              {
+                "id": 3,
+                "slug": "rakesh-kumar",
+                "name": "Rakesh Kumar",
+                "position": "Security Supervisor",
+                "image": "/people/men2.png"
+              },
+              {
+                "id": 4,
+                "slug": "ananya-sharma",
+                "name": "Ananya Sharma",
+                "position": "Training Coordinator",
+                "image": "/people/women2.png"
+              },
+              {
+                "id": 5,
+                "slug": "vikram-yadav",
+                "name": "Vikram Yadav",
+                "position": "Team Leader",
+                "image": "/people/men3.png"
+              },
+              {
+                "id": 6,
+                "slug": "meena-rawat",
+                "name": "Meena Rawat",
+                "position": "Control Room Operator",
+                "image": "/people/women5.png"
+              },
+              {
+                "id": 7,
+                "slug": "suresh-verma",
+                "name": "Suresh Verma",
+                "position": "Mobile Patrol Officer",
+                "image": "/people/men4.png"
+              },
+              {
+                "id": 8,
+                "slug": "deepika-mishra",
+                "name": "Deepika Mishra",
+                "position": "Client Relations Executive",
+                "image": "/people/women4.png"
+              }
+            ],
+            "details": [
+              {
+                "slug": "arvind-sharma",
+                "name": "Arvind Sharma",
+                "position": "Chief Security Officer",
+                "image": "/people/man1.png",
+                "imageAlt": "Arvind Sharma, Chief Security Officer",
+                "biography": "Arvind leads our security strategy and ensures every assignment is built around the safety of our clients and their people. With extensive experience in security operations, he oversees site assessments, service standards and incident readiness. He works closely with clients to understand their risks and translate them into practical plans. Arvind also supports and mentors our leadership team, building a culture of accountability, professionalism and calm decision-making. His focus is dependable protection and long-term client confidence.",
+                "highlights": [
+                  "Leads security strategy and operational standards",
+                  "Oversees client risk assessments and protection plans",
+                  "Guides incident response and escalation readiness",
+                  "Mentors team leaders and security supervisors",
+                  "Builds trusted relationships with clients"
+                ]
+              },
+              {
+                "slug": "priya-singh",
+                "name": "Priya Singh",
+                "position": "Operations Manager",
+                "image": "/people/women1.png",
+                "imageAlt": "Priya Singh, Operations Manager",
+                "biography": "Priya coordinates the people and processes that keep our security services running smoothly every day. She manages assignments, schedules and operational communication so each client receives consistent coverage. Priya works with supervisors to address changing site requirements and makes sure teams have clear instructions before every shift. She is known for her organized approach, thoughtful problem-solving and steady support for both clients and colleagues. Her priority is reliable service with the right people in the right place.",
+                "highlights": [
+                  "Coordinates staffing and day-to-day assignments",
+                  "Maintains dependable coverage across client sites",
+                  "Communicates operational updates clearly",
+                  "Supports supervisors with changing requirements",
+                  "Monitors service quality and follow-through"
+                ]
+              },
+              {
+                "slug": "rakesh-kumar",
+                "name": "Rakesh Kumar",
+                "position": "Security Supervisor",
+                "image": "/people/men2.png",
+                "imageAlt": "Rakesh Kumar, Security Supervisor",
+                "biography": "Rakesh supports frontline teams and helps ensure that site procedures are followed with care and consistency. He checks in with officers, reviews shift handovers and provides practical guidance when situations need attention. His hands-on approach helps identify small concerns before they become larger issues. Rakesh also keeps communication flowing between clients, guards and operations, making sure information reaches the right people. He takes pride in maintaining a professional, visible and dependable security presence.",
+                "highlights": [
+                  "Supervises guards and daily site routines",
+                  "Checks shift handovers and assignment readiness",
+                  "Reinforces client procedures and service standards",
+                  "Escalates incidents through clear channels",
+                  "Provides practical support to frontline officers"
+                ]
+              },
+              {
+                "slug": "ananya-sharma",
+                "name": "Ananya Sharma",
+                "position": "Training Coordinator",
+                "image": "/people/women2.png",
+                "imageAlt": "Ananya Sharma, Training Coordinator",
+                "biography": "Ananya helps our security professionals build the knowledge and confidence they need to serve clients well. She coordinates onboarding and ongoing learning, with a focus on communication, awareness and responsible response. Ananya works with supervisors to identify useful coaching opportunities and keep training relevant to the environments our teams protect. She encourages a thoughtful, respectful approach to every interaction. Her work helps officers stay prepared, professional and ready to adapt to changing site needs.",
+                "highlights": [
+                  "Coordinates team onboarding and ongoing learning",
+                  "Supports role-specific site briefings",
+                  "Promotes clear communication and situational awareness",
+                  "Works with supervisors on coaching needs",
+                  "Encourages professional and respectful conduct"
+                ]
+              },
+              {
+                "slug": "vikram-yadav",
+                "name": "Vikram Yadav",
+                "position": "Team Leader",
+                "image": "/people/men3.png",
+                "imageAlt": "Vikram Yadav, Team Leader",
+                "biography": "Vikram leads security teams on the ground, setting a positive example through consistency and professionalism. He makes sure officers understand their responsibilities, communicate effectively and provide a welcoming presence for clients and visitors. During each shift, Vikram monitors site activity and supports his team as priorities change. He believes strong teamwork and clear handovers are essential to dependable protection. His practical leadership helps create a secure and well-managed environment for everyone on site.",
+                "highlights": [
+                  "Leads and supports officers during assigned shifts",
+                  "Sets clear expectations for site responsibilities",
+                  "Promotes teamwork and reliable handovers",
+                  "Monitors activity and raises concerns promptly",
+                  "Maintains a professional presence for guests and clients"
+                ]
+              },
+              {
+                "slug": "meena-rawat",
+                "name": "Meena Rawat",
+                "position": "Control Room Operator",
+                "image": "/people/women5.png",
+                "imageAlt": "Meena Rawat, Control Room Operator",
+                "biography": "Meena helps maintain awareness across monitored sites by handling information carefully and communicating it promptly. She supports control-room operations, keeps clear records and coordinates updates with field teams when attention is needed. Meena stays composed while managing multiple requests and follows established procedures to ensure important details are not missed. Her careful observation and dependable communication help strengthen our wider response. She is committed to providing attentive support around the clock.",
+                "highlights": [
+                  "Supports monitoring and control-room operations",
+                  "Records important updates with care and accuracy",
+                  "Coordinates timely communication with field teams",
+                  "Follows established escalation procedures",
+                  "Maintains calm focus across changing priorities"
+                ]
+              },
+              {
+                "slug": "suresh-verma",
+                "name": "Suresh Verma",
+                "position": "Mobile Patrol Officer",
+                "image": "/people/men4.png",
+                "imageAlt": "Suresh Verma, Mobile Patrol Officer",
+                "biography": "Suresh carries out mobile patrols and site checks to help clients maintain a visible and responsive security presence. He follows agreed routes, pays close attention to entrances and boundaries, and records relevant observations from each visit. When he identifies an issue, Suresh communicates it through the appropriate channels so it can be addressed quickly. He approaches every assignment with care, punctuality and respect for the property he protects. His work helps clients feel informed and supported between on-site shifts.",
+                "highlights": [
+                  "Completes scheduled mobile patrols and site checks",
+                  "Inspects agreed entrances, boundaries and key areas",
+                  "Documents visits and notable observations",
+                  "Reports concerns through clear escalation channels",
+                  "Provides a punctual and visible security presence"
+                ]
+              },
+              {
+                "slug": "deepika-mishra",
+                "name": "Deepika Mishra",
+                "position": "Client Relations Executive",
+                "image": "/people/women4.png",
+                "imageAlt": "Deepika Mishra, Client Relations Executive",
+                "biography": "Deepika is a key point of contact for clients, helping ensure questions and service requests receive thoughtful attention. She listens closely, shares updates with the appropriate teams and follows through so clients know what to expect. Her clear communication helps connect day-to-day site operations with each client's priorities. Deepika values responsive service and the trust built through consistent, respectful interactions. She works to make every client feel heard, informed and confident in their security support.",
+                "highlights": [
+                  "Builds clear and responsive client communication",
+                  "Coordinates service requests with internal teams",
+                  "Shares useful updates and follows through",
+                  "Listens to client feedback and changing priorities",
+                  "Strengthens long-term, trusted working relationships"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "Gallery": {
+        "variants": {
+          "SecurityGallery1": {
+            "banner": {
+              "title": "Gallery",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Gallery"
+                }
+              ]
+            },
+            "heading": {
+              "badge": "OUR GALLERY",
+              "title": "Our Security Gallery"
+            },
+            "visibleCount": 8,
+            "images": [
+              {
+                "id": 1,
+                "title": "Guard Team On Duty",
+                "image": "/security/guard1.jpg"
+              },
+              {
+                "id": 2,
+                "title": "Corporate Gate Security",
+                "image": "/security/guard2.jpg"
+              },
+              {
+                "id": 3,
+                "title": "Patrol Team Assembly",
+                "image": "/security/guard3.jpg"
+              },
+              {
+                "id": 4,
+                "title": "Residential Society Security",
+                "image": "/security/guard4.jpg"
+              },
+              {
+                "id": 5,
+                "title": "Professional Guard In Uniform",
+                "image": "/security/guard5.jpg"
+              },
+              {
+                "id": 6,
+                "title": "Access Control Duty",
+                "image": "/security/guard6.jpg"
+              },
+              {
+                "id": 7,
+                "title": "Site Security Patrol",
+                "image": "/security/guard7.jpg"
+              },
+              {
+                "id": 8,
+                "title": "Event Security Cover",
+                "image": "/security/guard8.jpg"
+              },
+              {
+                "id": 9,
+                "title": "Security Briefing Session",
+                "image": "/security/guard9.jpg"
+              },
+              {
+                "id": 10,
+                "title": "Industrial Premises Security",
+                "image": "/security/guard10.jpg"
+              },
+              {
+                "id": 11,
+                "title": "24/7 Monitoring Support",
+                "image": "/security/guard11.jpg"
+              }
+            ],
+            "loadMoreLabel": "Load More"
+          }
+        }
+      },
+      "FAQ": {
+        "variants": {
+          "SecurityFAQ1": {
+            "banner": {
+              "title": "Faq",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Faq"
+                }
+              ]
+            },
+            "badge": "FAQS",
+            "title": {
+              "normal": "Frequently Asked",
+              "highlighted": "Questions"
+            },
+            "desc": "Find answers to common questions about our security guard services, staffing, training, and custom security solutions.",
+            "image": "/security/guard5.jpg",
+            "items": [
+              {
+                "id": 1,
+                "question": "What types of security guard services do you provide?",
+                "answer": "We provide a wide range of security guard services including commercial, residential, industrial, event, retail, construction site, and healthcare security. Our services are customized to meet the specific needs of each client."
+              },
+              {
+                "id": 2,
+                "question": "Are your security guards trained and verified?",
+                "answer": "Yes, all our security personnel undergo rigorous background checks, professional training, and verification procedures before deployment."
+              },
+              {
+                "id": 3,
+                "question": "Can you provide security for short-term events?",
+                "answer": "We offer flexible security guard staffing for corporate events, private parties, concerts, exhibitions, and short-term assignments."
+              },
+              {
+                "id": 4,
+                "question": "Do you offer 24/7 security services?",
+                "answer": "Yes, our security teams and monitoring centers operate round the clock to ensure uninterrupted protection for your premises."
+              },
+              {
+                "id": 5,
+                "question": "What industries do you serve?",
+                "answer": "We serve a wide variety of sectors including corporate offices, residential societies, industrial plants, healthcare facilities, and retail centers."
+              },
+              {
+                "id": 6,
+                "question": "How do you ensure the quality of your security personnel?",
+                "answer": "We maintain strict supervision, regular performance audits, ongoing training programs, and direct communication channels with our guards."
+              },
+              {
+                "id": 7,
+                "question": "Can we request a customized security plan?",
+                "answer": "Every property has unique risks. We conduct site assessments to build tailored security protocols specific to your operational requirements."
+              },
+              {
+                "id": 8,
+                "question": "How do we get a quote for security services?",
+                "answer": "You can reach out to us via our contact form, phone, or email to discuss your security needs and receive a transparent, competitive estimate."
+              }
+            ]
+          }
+        }
+      },
+      "Contact": {
+        "variants": {
+          "SecurityContact1": {
+            "banner": {
+              "title": "Contact Us",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Contact Us"
+                }
+              ]
+            },
+            "badge": "CONTACT US",
+            "title": {
+              "normal": "Secure your",
+              "highlighted": "world",
+              "postTitle": "with us"
+            },
+            "desc": "Have questions or need a customized security solution? Our team is here to assist you. Get in touch with us today.",
+            "infoCards": [
+              {
+                "icon": "phone",
+                "label": "Phone Number",
+                "value": "+91-7503105661",
+                "href": "tel:+917503105661"
+              },
+              {
+                "icon": "mail",
+                "label": "Email Address",
+                "value": "hq@vjsecurity.co.in",
+                "href": "mailto:hq@vjsecurity.co.in"
+              },
+              {
+                "icon": "location",
+                "label": "Location",
+                "value": "Urbtech Trade Centre, Unit No-627, B-35, Sector-132, Noida Expressway, UP - 201304",
+                "href": "https://maps.google.com/?q=Urbtech+Trade+Centre+Sector+132+Noida"
+              }
+            ],
+            "socialLinks": [
+              {
+                "icon": "instagram",
+                "href": "https://www.instagram.com/"
+              },
+              {
+                "icon": "linkedin",
+                "href": "https://www.linkedin.com/"
+              },
+              {
+                "icon": "facebook",
+                "href": "https://www.facebook.com/"
+              },
+              {
+                "icon": "twitter",
+                "href": "https://x.com/"
+              }
+            ],
+            "form": {
+              "title": {
+                "normal": "Send us",
+                "highlighted": "message"
+              },
+              "desc": "We specialize in providing top-quality security, PSO, and facility solutions to safeguard your people, property and business.",
+              "mapTitle": "Google Map Location",
+              "submitLabel": "Send Message",
+              "successMessage": "Thank you! Your message has been sent successfully.",
+              "fields": [
+                {
+                  "name": "firstName",
+                  "type": "text",
+                  "placeholder": "First name *",
+                  "required": true,
+                  "half": true
+                },
+                {
+                  "name": "lastName",
+                  "type": "text",
+                  "placeholder": "Last name",
+                  "required": false,
+                  "half": true
+                },
+                {
+                  "name": "email",
+                  "type": "email",
+                  "placeholder": "E-mail *",
+                  "required": true,
+                  "half": true
+                },
+                {
+                  "name": "phone",
+                  "type": "tel",
+                  "placeholder": "Phone no *",
+                  "required": true,
+                  "half": true
+                },
+                {
+                  "name": "message",
+                  "type": "textarea",
+                  "placeholder": "Your Message...",
+                  "required": true,
+                  "rows": 4
+                }
+              ]
+            },
+            "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.789182390757!2d77.37187637618037!3d28.515904975727937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce63a83021f1d%3A0xc34ba24ba6062f4!2sUrbtech%20Trade%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          }
+        }
+      },
+      "Clients": {
+        "variants": {
+          "SecurityClients1": {
+            "meta": {
+              "title": "Our Clients | VJ Security - 2803 Vikas Joshi Security Agency",
+              "description": "Trusted security partner for leading brands, PSUs, logistics giants, and premier institutions across India."
+            },
+            "banner": {
+              "title": "Our Clients",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Our Clients"
+                }
+              ]
+            },
+            "sectionHeading": "OUR CLIENTS",
+            "clients": [
+              {
+                "name": "Sajawat",
+                "logo": "/clients/sajawat.svg",
+                "subtitle": "Sajawat"
+              },
+              {
+                "name": "Delhivery India Pvt. Ltd",
+                "logo": "/clients/delhivery.svg",
+                "subtitle": "Delhivery India Pvt. Ltd"
+              },
+              {
+                "name": "Israel Aerospace India Pvt. Ltd.",
+                "logo": "/clients/iai.svg",
+                "subtitle": "Israel Aerospace India Pvt. Ltd."
+              },
+              {
+                "name": "Sunbeam Auto Pvt. Ltd., Gurugram",
+                "logo": "/clients/sunbeam.svg",
+                "subtitle": "Sunbeam Auto Pvt. Ltd., Gurugram"
+              },
+              {
+                "name": "ITC Hotel Taj Ganj, Agra",
+                "logo": "/clients/ITC-Hotel-Taj.jpg",
+                "subtitle": "ITC Hotel Taj Ganj, Agra"
+              },
+              {
+                "name": "Hindustan Petroleum Corporation Ltd., Delhi",
+                "logo": "/clients/HP.webp",
+                "subtitle": "Hindustan Petroleum Corporation Ltd., Delhi"
+              },
+              {
+                "name": "Unnati Fortune Group",
+                "logo": "/clients/Unnati-Fortune-Group-logo.webp",
+                "subtitle": "Unnati Fortune Group"
+              },
+              {
+                "name": "Indian Oil Corporation Limited, Delhi",
+                "logo": "/clients/indian-oil.png",
+                "subtitle": "Indian Oil Corporation Limited, Delhi"
+              },
+              {
+                "name": "Delhi Development Authority (DDA)",
+                "logo": "/clients/Delhi_Development_Authority.webp",
+                "subtitle": "Delhi Development Authority"
+              },
+              {
+                "name": "Rafael Advanced Defense Systems",
+                "logo": "/clients/Rafael.webp",
+                "subtitle": "Rafael Advanced Defense"
+              },
+              {
+                "name": "Elbit Systems",
+                "logo": "/clients/Elbit_Systems.svg",
+                "subtitle": "Elbit Systems"
+              },
+              {
+                "name": "National Institute of Technology (NIT)",
+                "logo": "/clients/National-Institute-of-Technology.jpg",
+                "subtitle": "National Institute of Technology"
+              },
+              {
+                "name": "Centre for Development of Telematics (C-DOT)",
+                "logo": "/clients/cdotindia_logo.jpg",
+                "subtitle": "C-DOT India"
+              },
+              {
+                "name": "Oriental Bank of Commerce",
+                "logo": "/clients/Oriental-Bank-of-Commerce.jpeg",
+                "subtitle": "Oriental Bank of Commerce"
+              },
+              {
+                "name": "Mira Model School",
+                "logo": "/clients/mira-model-school.png",
+                "subtitle": "Mira Model School"
+              }
+            ]
+          }
+        }
+      },
+      "Document": {
+        "variants": {
+          "SecurityDocument1": {
+            "meta": {
+              "title": "Document | VJ Security - 2803 Vikas Joshi Security Agency",
+              "description": "Official documents, EPF Delhi, ESI Delhi, GST Delhi, Account Detail and PSARA Licenses across Delhi, UP, Haryana, Tripura, Odisha, Karnataka."
+            },
+            "banner": {
+              "title": "Document",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Document"
+                }
+              ]
+            },
+            "sectionHeading": "Document",
+            "psaraHeading": "PSARA LICENCE",
+            "pdfDocuments": [
+              {
+                "id": "epf-delhi",
+                "title": "EPF Delhi",
+                "code": "EPFO Delhi Registration",
+                "fileUrl": "#"
+              },
+              {
+                "id": "esi-delhi",
+                "title": "ESI Delhi",
+                "code": "ESIC Delhi Compliance",
+                "fileUrl": "#"
+              },
+              {
+                "id": "gst-delhi",
+                "title": "GST Delhi",
+                "code": "GST Registration Certificate",
+                "fileUrl": "#"
+              },
+              {
+                "id": "account-detail",
+                "title": "Account Detail",
+                "code": "Official Banking & Remittance Details",
+                "fileUrl": "#"
+              }
+            ],
+            "psaraLicenses": [
+              {
+                "state": "Delhi",
+                "licenseNo": "14/127(649)/2012-13/PSC/HP-II"
+              },
+              {
+                "state": "UP",
+                "licenseNo": "PSA/L/37/UP/2021/JUN/3/112"
+              },
+              {
+                "state": "Haryana",
+                "licenseNo": "PSA/L/21/HR/2021/MAR/3/36"
+              },
+              {
+                "state": "Tripura",
+                "licenseNo": "PSA/L/47/TR/2021/AUG/1/24"
+              },
+              {
+                "state": "Odisha",
+                "licenseNo": "484/2021"
+              },
+              {
+                "state": "Karnataka",
+                "licenseNo": "ISD/PSA-47/2016"
+              }
+            ],
+            "footerNote": {
+              "beforeEmail": "For complete tender dossiers, certified true copies of PSARA licences, or statutory challans (EPF / ESIC), kindly write to us at",
+              "email": "hq@vjsecurity.co.in",
+              "emailHref": "mailto:hq@vjsecurity.co.in",
+              "between": "or call",
+              "phone": "+91-7503105661",
+              "phoneHref": "tel:+917503105661",
+              "afterPhone": "."
+            }
+          }
+        }
+      },
+      "Enquiry": {
+        "variants": {
+          "SecurityEnquiry1": {
+            "meta": {
+              "title": "Enquiry | VJ Security - 2803 Vikas Joshi Security Agency",
+              "description": "Request a security proposal from VJ Security. Share your deployment needs for guards, PSO, VIP and facility solutions."
+            },
+            "banner": {
+              "title": "Enquiry Form",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Enquiry"
+                }
+              ]
+            },
+            "badge": "2803 Vikas Joshi Security Agency",
+            "title": {
+              "normal": "Security Service",
+              "highlighted": "Enquiry"
+            },
+            "description": "Fill out your security requirements below for an immediate proposal and tailored quotation from our operations team.",
+            "sections": [
+              {
+                "id": "contact",
+                "title": "1. Contact Information"
+              },
+              {
+                "id": "premises",
+                "title": "2. Premises & Deployment Location"
+              },
+              {
+                "id": "deployment",
+                "title": "3. Security Deployment Details"
+              }
+            ],
+            "fields": {
+              "name": {
+                "placeholder": "Your Full Name *",
+                "required": true
+              },
+              "phone": {
+                "placeholder": "Mobile Number *",
+                "required": true
+              },
+              "email": {
+                "placeholder": "Email Address *",
+                "required": true
+              },
+              "company": {
+                "placeholder": "Company / Society / Individual Name",
+                "required": false
+              },
+              "location": {
+                "placeholder": "City / Location (e.g. Noida, Delhi NCR, Gurugram) *",
+                "required": true
+              },
+              "guardsCount": {
+                "placeholder": "Estimated No. of Guards (e.g. 2, 5, 20)",
+                "required": false
+              },
+              "requirements": {
+                "placeholder": "Describe any specific site procedures, weapons requirement, uniform preference, or instructions...",
+                "required": false
+              }
+            },
+            "serviceOptions": [
+              {
+                "value": "",
+                "label": "Select Service Needed *"
+              },
+              {
+                "value": "armed-guard",
+                "label": "Armed Guard Services"
+              },
+              {
+                "value": "unarmed-guard",
+                "label": "Unarmed Guard Services"
+              },
+              {
+                "value": "personal-security-officer",
+                "label": "Personal Security Officer (PSO)"
+              },
+              {
+                "value": "armed-marshal",
+                "label": "Armed Marshal Services"
+              },
+              {
+                "value": "vehicle-security",
+                "label": "Vehicle Security Services"
+              },
+              {
+                "value": "events-security",
+                "label": "Events Security Services"
+              },
+              {
+                "value": "security-analysis",
+                "label": "Security Analysis Services"
+              },
+              {
+                "value": "security-audit",
+                "label": "Security Audit Services"
+              },
+              {
+                "value": "consultancy-service",
+                "label": "Consultancy Service"
+              },
+              {
+                "value": "facilities-management",
+                "label": "Facilities Management"
+              },
+              {
+                "value": "manpower-solution",
+                "label": "Manpower Solution"
+              }
+            ],
+            "shiftOptions": [
+              {
+                "value": "12h",
+                "label": "12-Hour Shift Coverage"
+              },
+              {
+                "value": "8h",
+                "label": "8-Hour Shift Coverage"
+              },
+              {
+                "value": "24h",
+                "label": "24/7 Round the Clock (Day + Night)"
+              },
+              {
+                "value": "event",
+                "label": "Temporary Event / Short Term"
+              }
+            ],
+            "defaultShift": "12h",
+            "submitLabel": "Submit Enquiry",
+            "submittingLabel": "Submitting...",
+            "trustText": "100% Confidential & Free Site Consultation",
+            "success": {
+              "title": "Enquiry Submitted Successfully!",
+              "bodyBeforeName": "Thank you",
+              "bodyAfterName": ". Our senior security operations manager will review your deployment details and call you back on",
+              "bodyAfterPhone": "shortly.",
+              "resetLabel": "Submit Another Enquiry"
+            },
+            "helpline": {
+              "title": "Immediate Requirement?",
+              "description": "Speak directly to our 24/7 Operations Desk for emergency guard deployment.",
+              "phoneLabel": "Call: +91-7503105661",
+              "phoneHref": "tel:+917503105661"
+            }
+          }
+        }
+      },
+      "Careers": {
+        "variants": {
+          "SecurityCareers1": {
+            "meta": {
+              "title": "Careers | VJ Security - 2803 Vikas Joshi Security Agency",
+              "description": "Join VJ Security. Fill out our career application form to apply for security and facility roles."
+            },
+            "banner": {
+              "title": "Careers at VJ Security",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Careers"
+                }
+              ]
+            },
+            "roadSign": {
+              "title": "YOUR CAREER",
+              "subtitle": "VJ Security Agency"
+            },
+            "form": {
+              "title": "Career Form",
+              "description": "Please enter your details to apply for security & facility roles.",
+              "fields": {
+                "name": {
+                  "label": "Full Name",
+                  "placeholder": "Enter your full name",
+                  "required": true
+                },
+                "email": {
+                  "label": "E-Mail Address",
+                  "placeholder": "name@example.com",
+                  "required": true
+                },
+                "mobile": {
+                  "label": "Mobile Number",
+                  "placeholder": "+91 9876543210",
+                  "required": true
+                },
+                "address": {
+                  "label": "Address / Current City",
+                  "placeholder": "House no, street, city, state",
+                  "required": true
+                },
+                "resume": {
+                  "label": "Resume / Bio-Data (Optional)",
+                  "emptyText": "Select PDF, DOCX or Image file",
+                  "uploadLabel": "UPLOAD",
+                  "accept": ".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                }
+              },
+              "submitLabel": "SEND APPLICATION",
+              "submittingLabel": "SENDING...",
+              "success": {
+                "title": "Application Submitted!",
+                "bodyBeforeName": "Thank you",
+                "bodyAfterName": ". Your application has been logged. Our HR team will connect with you on",
+                "bodyAfterMobile": ".",
+                "resetLabel": "Submit Another Application"
+              },
+              "hrContact": {
+                "prefix": "Direct HR Recruitment:",
+                "phone": "+91-7503105661",
+                "phoneHref": "tel:+917503105661",
+                "emailLabel": "Email:",
+                "email": "hq@vjsecurity.co.in",
+                "emailHref": "mailto:hq@vjsecurity.co.in"
+              }
+            }
+          }
+        }
+      },
+      "Legal": {
+        "variants": {
+          "SecurityPrivacy1": {
+            "key": "privacy",
+            "meta": {
+              "title": "Privacy Policy | VJ Security",
+              "description": "Privacy policy of 2803 Vikas Joshi Security Agency (VJ Security Services)."
+            },
+            "banner": {
+              "title": "Privacy Policy",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Privacy Policy"
+                }
+              ]
+            },
+            "intro": "At 2803 Vikas Joshi Security Agency (VJ Security Services), we value your privacy and are committed to protecting your personal data.",
+            "introBold": "2803 Vikas Joshi Security Agency (VJ Security Services)",
+            "sections": [
+              {
+                "title": "Information We Collect",
+                "content": "We collect personal details such as your Name, Email Address, Contact Number, and Physical Address when you fill out our enquiry forms or contact us."
+              },
+              {
+                "title": "Payment Data Security",
+                "content": "We do not store your credit card, debit card, or net banking details on our servers. All financial transactions are processed securely via our authorized payment gateway partner (ICICI Bank) using industry-standard SSL encryption."
+              },
+              {
+                "title": "How We Use Your Data",
+                "content": "Your contact information is strictly used to communicate with you regarding your service requests and enquiries. We do not sell or share your data with any third-party marketing agencies."
+              },
+              {
+                "title": "Data Protection",
+                "content": "We implement strict physical and digital security measures to protect your information from unauthorized access."
+              }
+            ]
+          },
+          "SecurityTerms1": {
+            "key": "terms",
+            "meta": {
+              "title": "Terms and Conditions | VJ Security",
+              "description": "Terms and conditions for using VJ Security website and services."
+            },
+            "banner": {
+              "title": "Terms and Conditions",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Terms and Conditions"
+                }
+              ]
+            },
+            "effectiveDate": "Effective Date: [30 July 2026]",
+            "introBeforeLink": "Welcome to 2803 Vikas Joshi Security Agency, operating under the brand name VJ Security Services (\"Company\", \"we\", \"our\", or \"us\"). By accessing or using",
+            "websiteUrl": "https://vjsecurity.co.in/",
+            "websiteLabel": "https://vjsecurity.co.in/",
+            "introAfterLink": ", you agree to comply with and be bound by the following Terms & Conditions.",
+            "companyBold": "2803 Vikas Joshi Security Agency",
+            "brandBold": "VJ Security Services",
+            "sections": [
+              {
+                "title": "Services",
+                "content": "VJ Security provides unarmed guards, Personal Security Officers (PSO), vehicle security, and infrastructure management solutions."
+              },
+              {
+                "title": "User Responsibility",
+                "content": "Clients must provide accurate information regarding their security requirements and operational locations."
+              },
+              {
+                "title": "Payments",
+                "content": "All payments for services must be made in advance or as per the signed contract agreement through our authorized online payment gateway."
+              },
+              {
+                "title": "Intellectual Property",
+                "content": "All content, logos, and materials on this website are the property of VJ Security and cannot be used without permission."
+              },
+              {
+                "title": "Limitation of Liability",
+                "content": "VJ Security is dedicated to providing elite protection using armed forces-derived methodologies. However, we are not liable for any unforeseen disruptions or losses beyond our operational control."
+              },
+              {
+                "title": "Governing Law",
+                "content": "Any disputes arising out of the use of this website or our services shall be subject to the exclusive jurisdiction of the courts in Delhi/Noida, India."
+              }
+            ]
+          },
+          "SecurityRefund1": {
+            "key": "refund",
+            "meta": {
+              "title": "Refund and Cancellation Policy | VJ Security",
+              "description": "Refund and cancellation policy for VJ Security services."
+            },
+            "banner": {
+              "title": "Refund and Cancellation Policy",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Refund and Cancellation Policy"
+                }
+              ]
+            },
+            "introBeforeLink": "Thank you for choosing 2803 Vikas Joshi Security Agency (VJ Security Services) (",
+            "websiteUrl": "https://vjsecurity.co.in",
+            "websiteLabel": "www.vjsecurity.co.in",
+            "introAfterLink": "). Please review our policy regarding service cancellations and refunds:",
+            "companyBold": "2803 Vikas Joshi Security Agency (VJ Security Services)",
+            "blocks": [
+              {
+                "heading": "Cancellation Policy",
+                "items": [
+                  {
+                    "title": "Service Deployment Cancellation",
+                    "content": "Clients can request the cancellation of a security contract or guard deployment by providing a written notice at least 7 days before the scheduled deployment date."
+                  },
+                  {
+                    "title": "How to Cancel",
+                    "content": "All cancellation requests must be sent via email to our official support address:",
+                    "linkText": "hq@vjsecurity.co.in",
+                    "linkHref": "mailto:hq@vjsecurity.co.in",
+                    "afterLink": ". Phone cancellations will not be entertained."
+                  }
+                ]
+              },
+              {
+                "heading": "Refund Policy",
+                "items": [
+                  {
+                    "title": "Eligible Refunds",
+                    "content": "If a valid cancellation request is received and accepted within the 7-day notice period, the advance payment will be refunded after a minimal deduction of 10% administrative and processing charges."
+                  },
+                  {
+                    "title": "Non-Refundable",
+                    "content": "No refunds will be provided under the following circumstances:",
+                    "bullets": [
+                      "If the cancellation request is made less than 7 days before the deployment date.",
+                      "For security guards or Personal Security Officers (PSOs) who have already been deployed at the site.",
+                      "For services that have already been completed or partially rendered."
+                    ]
+                  }
+                ]
+              },
+              {
+                "heading": "Refund Processing Timeline",
+                "items": [
+                  {
+                    "content": "Once a refund request is approved by VJ Security management, the amount will be automatically credited back to the customer's original payment method (Credit Card, Debit Card, or Net Banking) used during the transaction."
+                  },
+                  {
+                    "content": "The refund will reflect in your account within 7 to 10 working days, depending on the banking partner's processing cycle."
+                  }
+                ]
+              }
+            ]
+          },
+          "SecurityShipping1": {
+            "key": "shipping",
+            "meta": {
+              "title": "Shipping and Delivery Policy | VJ Security",
+              "description": "Shipping and delivery policy for VJ Security service deployments."
+            },
+            "banner": {
+              "title": "Shipping and Delivery Policy",
+              "image": "/page-banner.jpg",
+              "items": [
+                {
+                  "label": "Home",
+                  "href": "/"
+                },
+                {
+                  "label": "Shipping and Delivery Policy"
+                }
+              ]
+            },
+            "blocks": [
+              {
+                "heading": "No Physical Shipping:",
+                "paragraphs": [
+                  {
+                    "beforeLink": "At 2803 Vikas Joshi Security Agency (VJ Security Services) (",
+                    "websiteUrl": "https://vjsecurity.co.in",
+                    "websiteLabel": "www.vjsecurity.co.in",
+                    "afterLink": "), we specialize in providing professional security solutions, including Security Guards, Personal Security Officers (PSOs), Event Security, and Safety Management Services. As a service-based organization, we do not manufacture, sell, or deliver any physical products.",
+                    "companyBold": "2803 Vikas Joshi Security Agency (VJ Security Services)"
+                  },
+                  {
+                    "text": "Since our business is entirely service-oriented, there are no physical goods, packages, or products that require shipping, courier, or logistics services. Therefore, conventional shipping and delivery policies are not applicable."
+                  }
+                ]
+              },
+              {
+                "heading": "Service Activation & Deployment",
+                "paragraphs": [
+                  {
+                    "text": "Once the service agreement has been finalized, the required documentation has been completed, and the agreed advance payment has been received, our team will initiate the deployment process. Security personnel will be assigned and deployed to the client's specified location on the mutually agreed date and time."
+                  }
+                ]
+              },
+              {
+                "heading": "Contact Us",
+                "paragraphs": [
+                  {
+                    "text": "For any questions regarding service deployment or scheduling, please contact our support team:"
+                  }
+                ],
+                "contactTitle": "VJ Security Services",
+                "contactItems": [
+                  {
+                    "label": "Website",
+                    "text": "www.vjsecurity.co.in",
+                    "href": "https://www.vjsecurity.co.in"
+                  },
+                  {
+                    "label": "Email",
+                    "text": "hq@vjsecurity.co.in",
+                    "href": "mailto:hq@vjsecurity.co.in"
+                  },
+                  {
+                    "label": "Phone",
+                    "phones": [
+                      {
+                        "text": "+91-7503105661",
+                        "href": "tel:+917503105661"
+                      },
+                      {
+                        "text": "7503105663",
+                        "href": "tel:+917503105663"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
