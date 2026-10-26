@@ -1,5 +1,5 @@
 import SecurityCta from "@/components/homelayout/CTA";
-import ServiceSection from "@/components/homelayout/ServiceSection";
+import ServicesCatalog from "@/components/layout/service/ServicesCatalog";
 import PageBanner from "@/components/shared/Banner";
 import { site } from "@/data";
 
@@ -13,7 +13,7 @@ export default function ServicesPage() {
         image={banner.image}
         items={banner.items}
       />
-      <ServiceSection showAll />
+      <ServicesCatalog />
       <SecurityCta />
     </>
   );

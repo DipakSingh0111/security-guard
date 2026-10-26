@@ -2242,13 +2242,13 @@
                 "id": "gst-delhi",
                 "title": "GST Delhi",
                 "code": "GST Registration Certificate",
-                "fileUrl": "#"
+                "fileUrl": "/clients/gst-delhi.pdf"
               },
               {
                 "id": "account-detail",
                 "title": "Account Detail",
                 "code": "Official Banking & Remittance Details",
-                "fileUrl": "#"
+                "fileUrl": "/clients/account-detail.pdf"
               }
             ],
             "psaraLicenses": [

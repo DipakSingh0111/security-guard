@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 import {
   LuChevronLeft,
   LuChevronRight,
-  LuMinus,
-  LuPlus,
   LuX,
 } from "react-icons/lu";
 import {
@@ -62,12 +60,9 @@ function GalleryTile({
 export default function Gallery() {
   const d = site.gallery;
   const images = getGalleryImages();
-  const defaultCount = getGalleryVisibleCount();
-
-  const [showAll, setShowAll] = useState(false);
   const [active, setActive] = useState<SecurityGalleryImage | null>(null);
 
-  const visible = showAll ? images : images.slice(0, defaultCount);
+  const visible = images;
 
   /* Slide to the previous / next image inside the dialog */
   const step = (delta: number) => {
@@ -142,32 +137,7 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* Load more / show less */}
-        <div className="mt-10 flex justify-center">
-          {showAll ? (
-            <button
-              type="button"
-              onClick={() => setShowAll(false)}
-              className="btn-fill-tl [--btn-fill:#06194a] [--btn-hover:#ffffff] inline-flex cursor-pointer items-center gap-3 rounded-full border-2 border-[#06194a] py-2 pl-6 pr-2 text-sm font-bold text-[#06194a] sm:text-base"
-            >
-              Show Less
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#06194a] text-white transition-colors">
-                <LuMinus size={18} />
-              </span>
-            </button>
-          ) : (
-            <button
-              type="button"
-              onClick={() => setShowAll(true)}
-              className="btn-fill-tr [--btn-fill:#06194a] [--btn-hover:#fdb913] inline-flex cursor-pointer items-center gap-3 rounded-full bg-[#fdb913] py-2 pl-6 pr-2 text-sm font-bold text-[#06194a] shadow-lg sm:text-base"
-            >
-              {site.gallery.loadMoreLabel}
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#06194a] text-white">
-                <LuPlus size={18} />
-              </span>
-            </button>
-          )}
-        </div>
+
       </div>
 
       {/* Lightbox dialog */}

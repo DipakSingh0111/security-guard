@@ -4,6 +4,8 @@ import SecurityCta from "@/components/homelayout/CTA";
 import { Shield } from "lucide-react";
 import { getDocumentData } from "@/data";
 
+import DocumentList from "@/components/layout/document/DocumentList";
+
 const data = getDocumentData();
 
 export const metadata: Metadata = {
@@ -27,51 +29,7 @@ export default function DocumentPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:gap-8 lg:grid-cols-4">
-            {pdfDocuments.map((doc) => (
-              <div
-                key={doc.id}
-                className="group flex flex-col items-center justify-between rounded-lg border border-gray-200 bg-white p-5 shadow-sm transition-all duration-300 hover:border-red-500 hover:shadow-xl"
-              >
-                <div className="relative my-4 flex h-28 w-28 items-center justify-center rounded-2xl border border-gray-100 bg-gradient-to-b from-gray-50 to-gray-100 p-4 shadow-inner transition-transform duration-300 group-hover:scale-105">
-                  <svg
-                    viewBox="0 0 64 64"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-20 w-20 drop-shadow-md"
-                  >
-                    <rect
-                      width="64"
-                      height="64"
-                      rx="14"
-                      fill="#fdfdfd"
-                      stroke="#e5e7eb"
-                      strokeWidth="1.5"
-                    />
-                    <path
-                      d="M18 46C18 43.5 22 36 29 27C27 21 25.5 14 27.5 13C29 12 31 13 32 17C33.5 23 33 27 35 30C40 33 46 36 47 38.5C48 41 46 43 43 43C39 43 33 39 29.5 37C24.5 42 19 46 18 46Z"
-                      stroke="#d9222a"
-                      strokeWidth="3.2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M31 29C29 32 23 39 19.5 43.5C21 44.5 24 43 27.5 39"
-                      stroke="#b91c1c"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </div>
-
-                <div className="w-full rounded bg-[#9b1d20] py-2 text-center shadow-md transition-colors group-hover:bg-[#b91c1c]">
-                  <span className="block text-xs font-bold uppercase tracking-wide text-white md:text-sm">
-                    {doc.title}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
+          <DocumentList documents={pdfDocuments} />
 
           <div className="mt-20">
             <h3 className="mb-6 flex items-center gap-2 text-xl font-bold uppercase tracking-wide text-[#9b1d20] md:text-2xl">
