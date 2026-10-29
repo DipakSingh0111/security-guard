@@ -6,6 +6,34 @@ import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
 import { site } from "@/data";
 import ScrollReveal from "../shared/ScrollReveal";
 
+/* Small "—— LABEL ——" eyebrow used above every section heading */
+function SectionLabel({
+  text,
+  tone = "navy",
+  center = false,
+}: {
+  text: string;
+  tone?: "navy" | "yellow" | "white";
+  center?: boolean;
+}) {
+  const color =
+    tone === "yellow"
+      ? "text-[#fdb913]"
+      : tone === "white"
+        ? "text-white"
+        : "text-[#06194a]";
+  return (
+    <div className={`flex items-center gap-3 ${center ? "justify-center" : ""}`}>
+      <span
+        className={`text-[clamp(0.7rem,0.9vw+0.45rem,1.05rem)] font-bold uppercase tracking-[0.18em] ${color}`}
+      >
+        {text}
+      </span>
+      {center && <span className="h-0.5 w-8 bg-[#fdb913] sm:w-10" />}
+    </div>
+  );
+}
+
 export default function SecurityBanner() {
   const { slides, autoplay, interval } = site.banner;
   const [active, setActive] = useState(0);
@@ -26,9 +54,9 @@ export default function SecurityBanner() {
   }, [autoplay, paused, interval, total]);
 
   return (
-    <ScrollReveal direction="none" duration={0.6}>
+    <ScrollReveal direction="up">
       <section
-        className="relative isolate h-screen min-h-[600px] w-full overflow-hidden bg-ink text-white"
+        className="relative isolate w-full overflow-hidden bg-[#06194a] text-white"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
         onTouchStart={(e) => {
@@ -36,91 +64,101 @@ export default function SecurityBanner() {
         }}
         onTouchEnd={(e) => {
           if (touchX.current === null) return;
+
           const dx = e.changedTouches[0].clientX - touchX.current;
-          if (Math.abs(dx) > 50) go(active + (dx < 0 ? 1 : -1));
+
+          if (Math.abs(dx) > 50) {
+            go(active + (dx < 0 ? 1 : -1));
+          }
+
           touchX.current = null;
         }}
       >
-        {/* Slides Track */}
-        <div className="relative h-full w-full overflow-hidden">
-          {slides.map((slide, i) => {
-            const isCurrent = i === active;
-            return (
+        <div className="w-full overflow-hidden">
+          <div
+            className="flex w-full transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${active * 100}%)` }}
+          >
+            {slides.map((slide, i) => (
               <div
                 key={slide.id}
-                className={`absolute inset-0 h-full w-full transition-opacity duration-1000 ease-in-out ${
-                  isCurrent ? "z-10 opacity-100" : "z-0 opacity-0 pointer-events-none"
-                }`}
+                className="relative flex h-[100svh] min-h-[100svh] w-full min-w-0 shrink-0 items-center overflow-hidden"
               >
-                {/* Original crisp background image without zoom degradation */}
                 <Image
                   src={slide.image.src}
                   alt={slide.image.alt}
                   fill
-                  priority={true}
-                  quality={100}
-                  unoptimized
+                  priority={i === 0}
                   sizes="100vw"
-                  className="object-cover object-center"
+                  className="object-cover object-[center_38%] sm:object-[center_35%] lg:object-[center_32%]"
                 />
 
-                {/* Minimal left shadow solely behind text, zero blur across the screen */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 via-40% to-transparent pointer-events-none" />
+                {/* Soft scrims for text + navbar contrast across zoom levels */}
+                <div className="pointer-events-none absolute inset-0 w-full bg-gradient-to-r from-black/80 via-black/40 to-transparent sm:w-2/3 lg:w-3/5" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-black/25" />
 
-                {/* Aesthetic Content - Left-aligned Title */}
-                <div className="relative z-10 flex h-full w-full items-center px-6 pt-20 sm:px-12 md:pt-24 lg:px-20">
-                  <div className="mx-auto w-full max-w-7xl">
-                    <div className="max-w-2xl text-left">
-                      {/* Simple & Elegant Title */}
-                      <h1 className="font-display text-4xl font-extrabold leading-tight tracking-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)] sm:text-6xl md:text-7xl">
-                        <span>{slide.title.normal}</span>{" "}
-                        <span className="text-brass">{slide.title.highlighted}</span>
-                        {slide.title.postTitle && (
-                          <span className="mt-4 block text-lg font-normal tracking-wide text-white/90 drop-shadow-md sm:text-2xl md:text-3xl">
-                            {slide.title.postTitle}
-                          </span>
-                        )}
-                      </h1>
-                    </div>
+                <div
+                  className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center
+                    px-4
+                    sm:pl-20 sm:pr-8
+                    lg:pl-24 lg:pr-10
+                    xl:pl-12 xl:pr-12
+                    pt-[clamp(6.5rem,14svh,10rem)]
+                    pb-[clamp(3.5rem,8svh,6rem)]"
+                >
+                  <div className="w-full min-w-0 max-w-xl lg:max-w-2xl">
+                    <SectionLabel text={slide.badge} tone="yellow" />
+
+                    <h1
+                      className="mt-[clamp(0.5rem,1.2svh,0.85rem)] font-extrabold
+                        text-[clamp(1.65rem,2.2vw+0.85rem,3.5rem)]
+                        leading-[1.12]
+                        drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)]"
+                    >
+                      <span className="block">{slide.title.normal}</span>
+                      <span className="block text-[#fdb913]">
+                        {slide.title.highlighted}
+                      </span>
+                      <span className="block">{slide.title.postTitle}</span>
+                    </h1>
                   </div>
                 </div>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
 
-        {/* Left / Right Arrow Buttons */}
         {total > 1 && (
           <>
             <button
               type="button"
               onClick={() => go(active - 1)}
               aria-label="Previous slide"
-              className="absolute left-4 top-1/2 z-20 -translate-y-1/2 flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-white/30 bg-black/60 text-white transition-all hover:scale-110 hover:border-brass hover:bg-brass hover:text-ink sm:left-8"
+              className="absolute left-2 top-[58%] z-20 hidden h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/30 bg-[#06194a]/75 text-white backdrop-blur transition-colors hover:bg-[#fdb913] hover:text-[#06194a] sm:flex lg:left-4 lg:h-11 lg:w-11 xl:top-1/2"
             >
               <LuChevronLeft size={22} />
             </button>
+
             <button
               type="button"
               onClick={() => go(active + 1)}
               aria-label="Next slide"
-              className="absolute right-4 top-1/2 z-20 -translate-y-1/2 flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-white/30 bg-black/60 text-white transition-all hover:scale-110 hover:border-brass hover:bg-brass hover:text-ink sm:right-8"
+              className="absolute right-2 top-[58%] z-20 hidden h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/30 bg-[#06194a]/75 text-white backdrop-blur transition-colors hover:bg-[#fdb913] hover:text-[#06194a] sm:flex lg:right-4 lg:h-11 lg:w-11 xl:top-1/2"
             >
               <LuChevronRight size={22} />
             </button>
 
-            {/* Bottom Slider Dots */}
-            <div className="absolute bottom-8 left-1/2 z-20 flex -translate-x-1/2 items-center gap-3 rounded-full border border-white/20 bg-black/60 px-4 py-2">
-              {slides.map((_, i) => (
+            <div className="absolute bottom-[clamp(1rem,3svh,1.75rem)] left-1/2 z-20 flex -translate-x-1/2 items-center gap-2">
+              {slides.map((s, i) => (
                 <button
-                  key={i}
+                  key={s.id}
                   type="button"
                   onClick={() => go(i)}
-                  aria-label={`Slide ${i + 1}`}
-                  className={`cursor-pointer rounded-full transition-all duration-300 ${
+                  aria-label={`Go to slide ${i + 1}`}
+                  className={`h-2 rounded-full transition-all duration-300 ${
                     i === active
-                      ? "h-2.5 w-8 bg-brass"
-                      : "h-2.5 w-2.5 bg-white/40 hover:bg-white/70"
+                      ? "w-6 bg-[#fdb913]"
+                      : "w-2 bg-white/80 hover:bg-white"
                   }`}
                 />
               ))}

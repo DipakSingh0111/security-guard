@@ -54,10 +54,10 @@ function SectionLabel({
 }) {
   const color =
     tone === "yellow"
-      ? "text-brass"
+      ? "text-[#fdb913]"
       : tone === "white"
         ? "text-white"
-        : "text-ink";
+        : "text-[#06194a]";
 
   return (
     <div
@@ -65,7 +65,7 @@ function SectionLabel({
         center ? "justify-center" : ""
       }`}
     >
-      <span className="h-0.5 w-8 bg-brass sm:w-10" />
+      <span className="h-0.5 w-8 bg-[#fdb913] sm:w-10" />
 
       <span
         className={`text-sm font-bold uppercase  sm:text-[15px]  ${color}`}
@@ -121,9 +121,9 @@ export default function SecurityTestimonial() {
         <ScrollReveal as="div" direction="up" className="mx-auto max-w-2xl text-center">
           <SectionLabel text={t.badge} center />
 
-          <h2 className="mt-3 text-3xl font-bold leading-tight text-ink sm:text-4xl lg:text-[44px]">
+          <h2 className="mt-3 text-3xl font-bold leading-tight text-[#06194a] sm:text-4xl lg:text-[44px]">
             {t.title.normal}{" "}
-            <span className="text-brass">
+            <span className="text-[#fdb913]">
               {t.title.highlighted}
             </span>
           </h2>
@@ -152,7 +152,7 @@ export default function SecurityTestimonial() {
                   key={it.id}
                   className="w-full shrink-0"
                 >
-                  <div className="grid items-center gap-6 rounded-3xl bg-white p-4 shadow-[0_20px_60px_rgba(14,22,18,0.15)] sm:p-6 md:grid-cols-[300px_1fr] md:gap-10 lg:grid-cols-[340px_1fr]">
+                  <div className="grid items-center gap-6 rounded-3xl bg-white p-4 shadow-[0_20px_60px_rgba(10,47,143,0.15)] sm:p-6 md:grid-cols-[300px_1fr] md:gap-10 lg:grid-cols-[340px_1fr]">
 
                     {/* Photo */}
                     <div className="relative mx-auto w-full  max-w-xs lg:max-w-[500px]">
@@ -185,7 +185,7 @@ export default function SecurityTestimonial() {
                           <LuStar
                             key={k}
                             size={18}
-                            className="fill-brass text-brass"
+                            className="fill-[#fdb913] text-[#fdb913]"
                           />
                         ))}
                       </div> */}
@@ -198,7 +198,7 @@ export default function SecurityTestimonial() {
                       {/* Person */}
                       <div className="mt-6 flex items-center gap-4 border-t border-slate-200 pt-5">
 
-                        <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#e9f0ff] text-field">
+                        <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#e9f0ff] text-[#0a3a9c]">
                           <Icon
                             name={it.companyIcon}
                             size={29}
@@ -206,7 +206,7 @@ export default function SecurityTestimonial() {
                         </span>
 
                         <div>
-                          <h3 className="text-base font-bold text-ink">
+                          <h3 className="text-base font-bold text-[#06194a]">
                             {it.name}
                           </h3>
 
@@ -237,7 +237,7 @@ export default function SecurityTestimonial() {
                 type="button"
                 onClick={() => go(active - 1)}
                 aria-label="Previous testimonial"
-                className="absolute -left-15 top-1/2 z-20 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white text-ink shadow-lg transition-all duration-300 hover:bg-brass md:flex"
+                className="absolute -left-15 top-1/2 z-20 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white text-[#06194a] shadow-lg transition-all duration-300 hover:bg-[#fdb913] md:flex"
               >
                 <LuArrowLeft size={20} />
               </button>
@@ -246,7 +246,7 @@ export default function SecurityTestimonial() {
                 type="button"
                 onClick={() => go(active + 1)}
                 aria-label="Next testimonial"
-                className="absolute -right-15 top-1/2 z-20 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-field text-white shadow-lg transition-all duration-300 hover:bg-brass hover:text-ink md:flex"
+                className="absolute -right-15 top-1/2 z-20 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-[#0a3a9c] text-white shadow-lg transition-all duration-300 hover:bg-[#fdb913] hover:text-[#06194a] md:flex"
               >
                 <LuArrowRight size={20} />
               </button>
@@ -264,7 +264,7 @@ export default function SecurityTestimonial() {
               type="button"
               onClick={() => go(active - 1)}
               aria-label="Previous testimonial"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-ink shadow md:hidden"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#06194a] shadow md:hidden"
             >
               <LuArrowLeft size={18} />
             </button>
@@ -291,7 +291,7 @@ export default function SecurityTestimonial() {
               type="button"
               onClick={() => go(active + 1)}
               aria-label="Next testimonial"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-field text-white shadow md:hidden"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0a3a9c] text-white shadow md:hidden"
             >
               <LuArrowRight size={18} />
             </button>

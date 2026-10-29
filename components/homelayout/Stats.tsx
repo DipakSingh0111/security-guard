@@ -40,15 +40,15 @@ function SectionLabel({
 }) {
   const color =
     tone === "yellow"
-      ? "text-brass"
+      ? "text-[#fdb913]"
       : tone === "white"
         ? "text-white"
-        : "text-ink";
+        : "text-[#06194a]";
   return (
     <div
       className={`flex items-center gap-3 ${center ? "justify-center" : ""}`}
     >
-      <span className="h-0.5 w-8 bg-brass sm:w-10" />
+      <span className="h-0.5 w-8 bg-[#fdb913] sm:w-10" />
       <span
         className={`text-sm font-bold uppercase tracking-[0.2em] sm:text-[13px]  ${color}`}
       >
@@ -88,7 +88,7 @@ function CountUp({ to, suffix }: { to: number; suffix: string }) {
   return (
     <span ref={ref}>
       {val}
-      <span className="text-brass">{suffix}</span>
+      <span className="text-[#fdb913]">{suffix}</span>
     </span>
   );
 }
@@ -111,7 +111,7 @@ export default function SecurityStats() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(to right, transparent 0%, rgba(14,22,18,0.25) 18%, rgba(14,22,18,0.85) 35%, rgba(14,22,18,0.9) 50%, rgba(14,22,18,0.85) 65%, rgba(14,22,18,0.25) 82%, transparent 100%)",
+            "linear-gradient(to right, transparent 0%, rgba(6,25,74,0.25) 18%, rgba(6,25,74,0.85) 35%, rgba(6,25,74,0.9) 50%, rgba(6,25,74,0.85) 65%, rgba(6,25,74,0.25) 82%, transparent 100%)",
         }}
       />
       
@@ -120,7 +120,7 @@ export default function SecurityStats() {
           <SectionLabel text={s.badge} tone="white" center />
           <h2 className="mt-3 text-3xl font-bold  sm:text-4xl lg:text-[44px]">
             {s.title.normal}
-            <span className="block text-brass">{s.title.highlighted}</span>
+            <span className="block text-[#fdb913]">{s.title.highlighted}</span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-base">
             {s.desc}
@@ -141,7 +141,7 @@ export default function SecurityStats() {
               <div
                 className={`mx-auto flex h-16 w-16 items-center justify-center rounded-full  shadow-lg ${
                   i % 2 === 0
-                    ? "bg-brass text-ink"
+                    ? "bg-[#fdb913] text-[#062c4b]"
                     : "bg-[#1d5fe0] text-white"
                 }`}
               >

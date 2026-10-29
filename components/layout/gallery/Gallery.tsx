@@ -9,6 +9,7 @@ import {
 } from "react-icons/lu";
 import {
   getGalleryImages,
+  getGalleryVisibleCount,
   site,
   type SecurityGalleryImage,
 } from "@/data";
@@ -28,20 +29,16 @@ function slideImage(
 function GalleryTile({
   image,
   onOpen,
-  featured = false,
 }: {
   image: SecurityGalleryImage;
   onOpen: (image: SecurityGalleryImage) => void;
-  featured?: boolean;
 }) {
   return (
     <button
       type="button"
       onClick={() => onOpen(image)}
       aria-label={`View ${image.title}`}
-      className={`group relative w-full cursor-pointer overflow-hidden bg-ink shadow-lg transition-shadow duration-300 hover:shadow-2xl ${
-        featured ? "aspect-[4/3] h-full min-h-[280px] lg:aspect-auto" : "aspect-[4/3]"
-      }`}
+      className="group relative aspect-[4/3] cursor-pointer w-full overflow-hidden rounded-xl bg-[#06194a] shadow-lg transition-shadow duration-300 hover:shadow-2xl"
     >
       <Image
         src={image.image}
@@ -51,10 +48,9 @@ function GalleryTile({
         className="object-cover transition-transform duration-500 group-hover:scale-110"
       />
 
-      <span className="absolute inset-0 bg-ink/0 transition-colors duration-300 group-hover:bg-ink/45" />
-      <span className="absolute left-0 top-0 h-full w-1 origin-top scale-y-0 bg-brass transition-transform duration-300 group-hover:scale-y-100" />
+      <span className="absolute inset-0 bg-[#06194a]/0 transition-colors duration-300 group-hover:bg-[#06194a]/40" />
 
-      <span className="absolute inset-x-0 bottom-0 translate-y-full bg-gradient-to-t from-ink via-ink/95 to-transparent px-4 pb-3 pt-8 text-left text-sm font-bold text-white transition-transform duration-300 group-hover:translate-y-0">
+      <span className="absolute inset-x-0 bottom-0 translate-y-full bg-gradient-to-t from-[#06194a] via-[#06194a]/95 to-transparent px-4 pb-3 pt-8 text-left text-sm font-bold text-white transition-transform duration-300 group-hover:translate-y-0">
         {image.title}
       </span>
     </button>
@@ -98,28 +94,22 @@ export default function Gallery() {
   }, [active, images]);
   return (
     <ScrollReveal direction="none" duration={0.6}>
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white py-8 md:py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <ScrollReveal
-          as="div"
-          direction="up"
-          className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
-        >
-          <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-brass/30 bg-brass/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.22em] text-brass">
-              <span className="h-1.5 w-1.5 rounded-full bg-signal" />
+        {/* Heading: badge + title */}
+        <ScrollReveal as="div" direction="up" className="mx-auto max-w-4xl text-center">
+          <div className="flex items-center justify-center gap-3">
+            <span className="h-0.5 w-8 bg-[#fdb913] sm:w-10" />
+            <span className="text-xs font-bold uppercase text-[#06194a] sm:text-[13px] lg:text-[17px]">
               {d.heading.badge}
             </span>
-            <h2 className="font-display mt-4 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl lg:text-[2.65rem]">
-              {d.heading.title.split(" ").slice(0, -2).join(" ")}{" "}
-              <span className="text-signal">
-                {d.heading.title.split(" ").slice(-2).join(" ")}
-              </span>
-            </h2>
           </div>
-          <p className="max-w-md text-sm text-muted sm:text-base">
-            Glimpses into our active deployment sites, vigilance routines, and specialized protection units across India.
-          </p>
+          <h2 className="mt-3 text-3xl font-bold leading-tight text-[#06194a] sm:text-4xl lg:text-[49px]">
+            {d.heading.title.split(" ").slice(0, -2).join(" ")}{" "}
+            <span className="text-[#fdb913]">
+              {d.heading.title.split(" ").slice(-2).join(" ")}
+            </span>
+          </h2>{" "}
         </ScrollReveal>
 
         {/* Mobile: horizontal scroll */}
@@ -128,7 +118,7 @@ export default function Gallery() {
             {visible.map((image, i) => (
               <div
                 key={image.id}
-                className="w-[82%] shrink-0 snap-start last:mr-4"
+                className="w-[78%] shrink-0 snap-start last:mr-4"
               >
                 <ScrollReveal as="div" index={i} staggerChildren={0.08} className="w-full">
                   <GalleryTile image={image} onOpen={setActive} />
@@ -138,28 +128,16 @@ export default function Gallery() {
           </div>
         </div>
 
-        {/* Desktop: featured + grid */}
-        <div className="mt-12 hidden gap-5 sm:grid sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+        {/* Tablet: 2 per row, Desktop: 4 per row */}
+        <div className="mt-12 hidden sm:grid sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
           {visible.map((image, i) => (
-            <ScrollReveal
-              as="div"
-              key={image.id}
-              index={i}
-              staggerChildren={0.08}
-              className={`w-full ${
-                i === 0
-                  ? "sm:col-span-2 sm:row-span-2"
-                  : ""
-              }`}
-            >
-              <GalleryTile
-                image={image}
-                onOpen={setActive}
-                featured={i === 0}
-              />
+            <ScrollReveal as="div" key={image.id} index={i} staggerChildren={0.08} className="w-full">
+              <GalleryTile image={image} onOpen={setActive} />
             </ScrollReveal>
           ))}
         </div>
+
+
       </div>
 
       {/* Lightbox dialog */}
@@ -175,7 +153,7 @@ export default function Gallery() {
             type="button"
             aria-label="Close image"
             onClick={() => setActive(null)}
-            className="absolute cursor-pointer right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full border border-white/30 bg-ink/70 text-white backdrop-blur transition-colors duration-300 hover:bg-brass hover:text-ink"
+            className="absolute cursor-pointer right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full border border-white/30 bg-[#06194a]/70 text-white backdrop-blur transition-colors duration-300 hover:bg-[#fdb913] hover:text-[#06194a]"
           >
             <LuX size={24} />
           </button>
@@ -187,7 +165,7 @@ export default function Gallery() {
               event.stopPropagation();
               step(-1);
             }}
-            className="absolute left-2 cursor-pointer top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-ink/70 text-white backdrop-blur transition-colors duration-300 hover:bg-brass hover:text-ink sm:left-6 sm:h-12 sm:w-12"
+            className="absolute left-2 cursor-pointer top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#06194a]/70 text-white backdrop-blur transition-colors duration-300 hover:bg-[#fdb913] hover:text-[#06194a] sm:left-6 sm:h-12 sm:w-12"
           >
             <LuChevronLeft size={26} />
           </button>
@@ -199,7 +177,7 @@ export default function Gallery() {
               event.stopPropagation();
               step(1);
             }}
-            className="absolute right-2 cursor-pointer top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-ink/70 text-white backdrop-blur transition-colors duration-300 hover:bg-brass hover:text-ink sm:right-6 sm:h-12 sm:w-12"
+            className="absolute right-2 cursor-pointer top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#06194a]/70 text-white backdrop-blur transition-colors duration-300 hover:bg-[#fdb913] hover:text-[#06194a] sm:right-6 sm:h-12 sm:w-12"
           >
             <LuChevronRight size={26} />
           </button>
