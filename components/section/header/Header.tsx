@@ -40,10 +40,7 @@ export default function SecurityHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
+  /* lock body scroll + Esc to close */
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
@@ -232,6 +229,7 @@ export default function SecurityHeader() {
                     <div className="flex items-center justify-between">
                       <Link
                         href={item.href}
+                        onClick={() => setOpen(false)}
                         className={`flex-1 py-3 text-[15px] font-medium transition-colors hover:text-brass ${
                           active ? "text-brass" : "text-white"
                         }`}
@@ -269,6 +267,7 @@ export default function SecurityHeader() {
                             <li key={child.label}>
                               <Link
                                 href={child.href}
+                                onClick={() => setOpen(false)}
                                 className="block border-l border-white/20 py-2 pl-4 text-sm text-white/80 transition-colors hover:border-brass hover:text-brass"
                               >
                                 {child.label}
@@ -287,6 +286,7 @@ export default function SecurityHeader() {
           <div className="space-y-4 border-t border-brass/20 px-5 py-5">
             <Link
               href={button.href}
+              onClick={() => setOpen(false)}
               className="btn-fill-tl flex w-full items-center justify-center gap-2 rounded-sm bg-signal px-5 py-3 text-sm font-semibold text-white [--btn-fill:#0e1612]"
             >
               {button.label}

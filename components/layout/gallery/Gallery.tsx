@@ -9,7 +9,6 @@ import {
 } from "react-icons/lu";
 import {
   getGalleryImages,
-  getGalleryVisibleCount,
   site,
   type SecurityGalleryImage,
 } from "@/data";

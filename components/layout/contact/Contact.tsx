@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import {
   LuPhone,
   LuMail,
@@ -17,7 +15,7 @@ import { site } from "@/data";
 import ScrollReveal from "../../shared/ScrollReveal";
 
 /* Maps icon strings to icons */
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, IconType> = {
   phone: LuPhone,
   mail: LuMail,
   location: LuMapPin,

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { LuPhone, LuMail, LuUser } from "react-icons/lu";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import SecurityLogo from "@/components/shared/SecurityLogo";

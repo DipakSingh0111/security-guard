@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -18,12 +17,13 @@ export default function SmoothScroll() {
     });
     lenisRef.current = lenis;
 
+    let rafId = 0;
     function raf(time: number) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
 
-    const rafId = requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
     return () => {
       cancelAnimationFrame(rafId);
@@ -44,15 +44,17 @@ export default function SmoothScroll() {
   // Global click listener for internal links: smooth scroll to top even if already on the same page
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
-      const target = (e.target as HTMLElement).closest("a, button");
+      const target = (e.target as HTMLElement | null)?.closest("a, button");
       if (!target) return;
 
       if (target.tagName === "A") {
         const href = (target as HTMLAnchorElement).getAttribute("href");
-        if (href && (href.startsWith("/") || href === "#" || href.startsWith("#"))) {
+        if (
+          href &&
+          (href.startsWith("/") || href === "#" || href.startsWith("#"))
+        ) {
           const url = new URL(href, window.location.origin);
           if (url.pathname === window.location.pathname && !url.hash) {
-            // Clicking link to current page
             if (lenisRef.current) {
               lenisRef.current.scrollTo(0, { duration: 1.0 });
             } else {

@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
-  },
+  /* Keep Vercel/production builds stable — avoid editor-only experiments */
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {
