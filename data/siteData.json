@@ -1239,28 +1239,28 @@
               {
                 "id": 4,
                 "icon": "hospital",
-                "image": "/security/guard6.jpg",
+                "image": "/security/guard3.jpg",
                 "title": "Healthcare Sector",
                 "description": "Hospitals, Clinics, Nursing Homes, Diagnostic Centers"
               },
               {
                 "id": 5,
                 "icon": "school",
-                "image": "/security/guard7.jpg",
+                "image": "/security/guard10.jpg",
                 "title": "Educational Institutions",
                 "description": "Schools, Colleges, Universities, Training Institutes"
               },
               {
                 "id": 6,
                 "icon": "shopping-bag",
-                "image": "/security/guard8.jpg",
+                "image": "/security/guard11.jpg",
                 "title": "Retail & Shopping",
                 "description": "Malls, Shopping Centers, Retail Stores, Showrooms"
               },
               {
                 "id": 7,
                 "icon": "hotel",
-                "image": "/security/guard9.jpg",
+                "image": "/security/guard5.jpg",
                 "title": "Hotels & Hospitality",
                 "description": "Hotels, Resorts, Restaurants, Banquet Halls"
               },
@@ -1274,7 +1274,7 @@
               {
                 "id": 9,
                 "icon": "truck",
-                "image": "/security/guard7.jpg",
+                "image": "/security/guard10.jpg",
                 "title": "Logistics & Warehousing",
                 "description": "Logistics Hubs, Distribution Centers, Storage Facilities"
               },
@@ -1295,7 +1295,7 @@
               {
                 "id": 12,
                 "icon": "warehouse",
-                "image": "/security/guard9.jpg",
+                "image": "/security/guard5.jpg",
                 "title": "Construction Sites",
                 "description": "Construction Projects, Infrastructure Sites, Development Areas"
               }
@@ -1412,7 +1412,7 @@
               "highlighted": "Is Our Priority"
             },
             "desc": "Trusted security guards, customized security solutions and 24/7 support to keep your people, property and business safe.",
-            "bgImage": "/security/guard9.jpg",
+            "bgImage": "/security/guard5.jpg",
             "image": "/security/guard5.jpg",
             "button": {
               "label": "Contact Us Now",
@@ -1672,56 +1672,56 @@
                 "slug": "arvind-sharma",
                 "name": "Arvind Sharma",
                 "position": "Chief Security Officer",
-                "image": "/people/man1.png"
+                "image": "/logo-image.png"
               },
               {
                 "id": 2,
                 "slug": "priya-singh",
                 "name": "Priya Singh",
                 "position": "Operations Manager",
-                "image": "/people/women1.png"
+                "image": "/logo-image.png"
               },
               {
                 "id": 3,
                 "slug": "rakesh-kumar",
                 "name": "Rakesh Kumar",
                 "position": "Security Supervisor",
-                "image": "/people/men2.png"
+                "image": "/logo-image.png"
               },
               {
                 "id": 4,
                 "slug": "ananya-sharma",
                 "name": "Ananya Sharma",
                 "position": "Training Coordinator",
-                "image": "/people/women2.png"
+                "image": "/logo-image.png"
               },
               {
                 "id": 5,
                 "slug": "vikram-yadav",
                 "name": "Vikram Yadav",
                 "position": "Team Leader",
-                "image": "/people/men3.png"
+                "image": "/logo-image.png"
               },
               {
                 "id": 6,
                 "slug": "meena-rawat",
                 "name": "Meena Rawat",
                 "position": "Control Room Operator",
-                "image": "/people/women5.png"
+                "image": "/logo-image.png"
               },
               {
                 "id": 7,
                 "slug": "suresh-verma",
                 "name": "Suresh Verma",
                 "position": "Mobile Patrol Officer",
-                "image": "/people/men4.png"
+                "image": "/logo-image.png"
               },
               {
                 "id": 8,
                 "slug": "deepika-mishra",
                 "name": "Deepika Mishra",
                 "position": "Client Relations Executive",
-                "image": "/people/women4.png"
+                "image": "/logo-image.png"
               }
             ],
             "details": [
@@ -1729,7 +1729,7 @@
                 "slug": "arvind-sharma",
                 "name": "Arvind Sharma",
                 "position": "Chief Security Officer",
-                "image": "/people/man1.png",
+                "image": "/logo-image.png",
                 "imageAlt": "Arvind Sharma, Chief Security Officer",
                 "biography": "Arvind leads our security strategy and ensures every assignment is built around the safety of our clients and their people. With extensive experience in security operations, he oversees site assessments, service standards and incident readiness. He works closely with clients to understand their risks and translate them into practical plans. Arvind also supports and mentors our leadership team, building a culture of accountability, professionalism and calm decision-making. His focus is dependable protection and long-term client confidence.",
                 "highlights": [
@@ -1744,7 +1744,7 @@
                 "slug": "priya-singh",
                 "name": "Priya Singh",
                 "position": "Operations Manager",
-                "image": "/people/women1.png",
+                "image": "/logo-image.png",
                 "imageAlt": "Priya Singh, Operations Manager",
                 "biography": "Priya coordinates the people and processes that keep our security services running smoothly every day. She manages assignments, schedules and operational communication so each client receives consistent coverage. Priya works with supervisors to address changing site requirements and makes sure teams have clear instructions before every shift. She is known for her organized approach, thoughtful problem-solving and steady support for both clients and colleagues. Her priority is reliable service with the right people in the right place.",
                 "highlights": [
@@ -1759,7 +1759,7 @@
                 "slug": "rakesh-kumar",
                 "name": "Rakesh Kumar",
                 "position": "Security Supervisor",
-                "image": "/people/men2.png",
+                "image": "/logo-image.png",
                 "imageAlt": "Rakesh Kumar, Security Supervisor",
                 "biography": "Rakesh supports frontline teams and helps ensure that site procedures are followed with care and consistency. He checks in with officers, reviews shift handovers and provides practical guidance when situations need attention. His hands-on approach helps identify small concerns before they become larger issues. Rakesh also keeps communication flowing between clients, guards and operations, making sure information reaches the right people. He takes pride in maintaining a professional, visible and dependable security presence.",
                 "highlights": [
@@ -1774,7 +1774,7 @@
                 "slug": "ananya-sharma",
                 "name": "Ananya Sharma",
                 "position": "Training Coordinator",
-                "image": "/people/women2.png",
+                "image": "/logo-image.png",
                 "imageAlt": "Ananya Sharma, Training Coordinator",
                 "biography": "Ananya helps our security professionals build the knowledge and confidence they need to serve clients well. She coordinates onboarding and ongoing learning, with a focus on communication, awareness and responsible response. Ananya works with supervisors to identify useful coaching opportunities and keep training relevant to the environments our teams protect. She encourages a thoughtful, respectful approach to every interaction. Her work helps officers stay prepared, professional and ready to adapt to changing site needs.",
                 "highlights": [
@@ -1789,7 +1789,7 @@
                 "slug": "vikram-yadav",
                 "name": "Vikram Yadav",
                 "position": "Team Leader",
-                "image": "/people/men3.png",
+                "image": "/logo-image.png",
                 "imageAlt": "Vikram Yadav, Team Leader",
                 "biography": "Vikram leads security teams on the ground, setting a positive example through consistency and professionalism. He makes sure officers understand their responsibilities, communicate effectively and provide a welcoming presence for clients and visitors. During each shift, Vikram monitors site activity and supports his team as priorities change. He believes strong teamwork and clear handovers are essential to dependable protection. His practical leadership helps create a secure and well-managed environment for everyone on site.",
                 "highlights": [
@@ -1804,7 +1804,7 @@
                 "slug": "meena-rawat",
                 "name": "Meena Rawat",
                 "position": "Control Room Operator",
-                "image": "/people/women5.png",
+                "image": "/logo-image.png",
                 "imageAlt": "Meena Rawat, Control Room Operator",
                 "biography": "Meena helps maintain awareness across monitored sites by handling information carefully and communicating it promptly. She supports control-room operations, keeps clear records and coordinates updates with field teams when attention is needed. Meena stays composed while managing multiple requests and follows established procedures to ensure important details are not missed. Her careful observation and dependable communication help strengthen our wider response. She is committed to providing attentive support around the clock.",
                 "highlights": [
@@ -1819,7 +1819,7 @@
                 "slug": "suresh-verma",
                 "name": "Suresh Verma",
                 "position": "Mobile Patrol Officer",
-                "image": "/people/men4.png",
+                "image": "/logo-image.png",
                 "imageAlt": "Suresh Verma, Mobile Patrol Officer",
                 "biography": "Suresh carries out mobile patrols and site checks to help clients maintain a visible and responsive security presence. He follows agreed routes, pays close attention to entrances and boundaries, and records relevant observations from each visit. When he identifies an issue, Suresh communicates it through the appropriate channels so it can be addressed quickly. He approaches every assignment with care, punctuality and respect for the property he protects. His work helps clients feel informed and supported between on-site shifts.",
                 "highlights": [
@@ -1834,7 +1834,7 @@
                 "slug": "deepika-mishra",
                 "name": "Deepika Mishra",
                 "position": "Client Relations Executive",
-                "image": "/people/women4.png",
+                "image": "/logo-image.png",
                 "imageAlt": "Deepika Mishra, Client Relations Executive",
                 "biography": "Deepika is a key point of contact for clients, helping ensure questions and service requests receive thoughtful attention. She listens closely, shares updates with the appropriate teams and follows through so clients know what to expect. Her clear communication helps connect day-to-day site operations with each client's priorities. Deepika values responsive service and the trust built through consistent, respectful interactions. She works to make every client feel heard, informed and confident in their security support.",
                 "highlights": [
