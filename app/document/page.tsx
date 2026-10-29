@@ -41,10 +41,10 @@ export default function DocumentPage() {
               {psaraLicenses.map((lic) => (
                 <div
                   key={lic.state}
-                  className="rounded bg-[#9b1d20] px-4 py-3.5 text-center shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#b91c1c] hover:shadow-lg"
+                  className="rounded bg-[#9b1d20] px-4 py-3.5 text-center shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-signal hover:shadow-lg"
                 >
                   <p className="break-words text-xs font-bold tracking-tight text-white sm:text-[13px]">
-                    <span className="uppercase text-[#fdb913]">{lic.state}-</span> &quot;
+                    <span className="uppercase text-brass">{lic.state}-</span> &quot;
                     {lic.licenseNo}&quot;
                   </p>
                 </div>
@@ -57,7 +57,7 @@ export default function DocumentPage() {
               {footerNote.beforeEmail}{" "}
               <a
                 href={footerNote.emailHref}
-                className="font-bold text-[#06194a] hover:underline"
+                className="font-bold text-ink hover:underline"
               >
                 {footerNote.email}
               </a>{" "}

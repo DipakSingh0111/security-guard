@@ -1,1 +1,133 @@
 @import "tailwindcss";
+
+/* ─────────────────────────────────────────────
+   Shield Security — Field Command theme
+   Olive field + crimson signal + brass accent
+   (replaces generic navy / yellow template)
+   ───────────────────────────────────────────── */
+
+@theme {
+  --color-ink: #0e1612;
+  --color-ink-soft: #1a2420;
+  --color-field: #2a3828;
+  --color-field-light: #3a4d38;
+  --color-signal: #b42318;
+  --color-signal-bright: #d1392f;
+  --color-brass: #c4a35a;
+  --color-brass-bright: #d4b76e;
+  --color-mist: #f2f4f1;
+  --color-mist-deep: #e5e9e4;
+  --color-muted: #5c665e;
+  --color-line: #cfd5cf;
+
+  --font-sans: var(--font-poppins), 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-poppins), 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-mist);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(ellipse 80% 50% at 100% -20%, rgba(196, 163, 90, 0.08), transparent),
+      radial-gradient(ellipse 60% 40% at 0% 100%, rgba(42, 56, 40, 0.06), transparent);
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--color-signal) 25%, white);
+    color: var(--color-ink);
+  }
+}
+
+@layer utilities {
+  .surface-mist {
+    background-color: var(--color-mist);
+  }
+
+  .surface-panel {
+    background: linear-gradient(
+      165deg,
+      color-mix(in oklab, var(--color-field) 92%, white) 0%,
+      var(--color-ink) 100%
+    );
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Diagonal steel hatch — subtle atmosphere, not flat fill */
+  .bg-hatch {
+    background-color: var(--color-mist);
+    background-image: repeating-linear-gradient(
+      -32deg,
+      transparent,
+      transparent 11px,
+      rgba(14, 22, 18, 0.03) 11px,
+      rgba(14, 22, 18, 0.03) 12px
+    );
+  }
+
+  .bg-field-mesh {
+    background-color: var(--color-ink);
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(196, 163, 90, 0.14), transparent 42%),
+      radial-gradient(circle at 80% 80%, rgba(180, 35, 24, 0.1), transparent 40%),
+      linear-gradient(160deg, var(--color-field) 0%, var(--color-ink) 55%, #0a100c 100%);
+  }
+
+  /* CTA fill wipe */
+  .btn-fill-tl,
+  .btn-fill-tr {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    isolation: isolate;
+  }
+
+  .btn-fill-tl::before,
+  .btn-fill-tr::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--btn-fill, var(--color-ink));
+    transform-origin: inherit;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .btn-fill-tl::before {
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+
+  .btn-fill-tr::before {
+    transform: scaleX(0);
+    transform-origin: right center;
+  }
+
+  .btn-fill-tl:hover::before,
+  .btn-fill-tr:hover::before {
+    transform: scaleX(1);
+  }
+
+  .btn-fill-tl:hover,
+  .btn-fill-tr:hover {
+    color: var(--btn-hover-text, #fff);
+    border-color: transparent;
+  }
+}

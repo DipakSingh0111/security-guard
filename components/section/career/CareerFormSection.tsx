@@ -11,6 +11,7 @@ import {
   CheckCircle2,
   FileText,
 } from "lucide-react";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { getCareersData } from "@/data";
 
 const data = getCareersData();
@@ -35,19 +36,19 @@ export default function CareerFormSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#f4f7f6] py-20 lg:py-28">
-      <div className="absolute top-0 right-1/4 -z-10 h-96 w-96 rounded-full bg-emerald-500/5 blur-3xl" />
-      <div className="absolute bottom-0 left-1/4 -z-10 h-96 w-96 rounded-full bg-[#fdb913]/10 blur-3xl" />
+    <section className="relative overflow-hidden bg-mist py-20 lg:py-28">
+      <div className="absolute top-0 right-1/4 -z-10 h-96 w-96 rounded-full bg-field/10 blur-3xl" />
+      <div className="absolute bottom-0 left-1/4 -z-10 h-96 w-96 rounded-full bg-brass/10 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-6">
-            <div className="relative flex min-h-[460px] flex-col justify-between overflow-hidden rounded-3xl border border-sky-100 bg-gradient-to-b from-[#38bdf8] via-[#0284c7] to-[#0369a1] p-8 shadow-2xl sm:p-12">
+            <div className="relative flex min-h-[460px] flex-col justify-between overflow-hidden rounded-3xl border border-brass/20 bg-gradient-to-b from-field via-ink-soft to-ink p-8 shadow-2xl sm:p-12">
               <div className="pointer-events-none absolute -top-20 -right-20 h-64 w-64 rounded-full bg-white/25 blur-3xl" />
-              <div className="pointer-events-none absolute top-1/2 -left-20 h-48 w-48 rounded-full bg-sky-200/20 blur-2xl" />
+              <div className="pointer-events-none absolute top-1/2 -left-20 h-48 w-48 rounded-full bg-brass/15 blur-2xl" />
 
               <div className="relative z-10 my-auto py-6">
-                <div className="relative mx-auto w-full max-w-md transform rounded-2xl border-[6px] border-white/95 bg-[#006f47] p-6 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.4)] transition-transform duration-300 hover:scale-[1.02] sm:p-7">
+                <div className="relative mx-auto w-full max-w-md transform rounded-2xl border-[6px] border-white/95 bg-field p-6 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.4)] transition-transform duration-300 hover:scale-[1.02] sm:p-7">
                   <div className="absolute top-3 left-3 h-3 w-3 rounded-full border border-gray-400/50 bg-gradient-to-br from-gray-200 to-gray-400 shadow-sm" />
                   <div className="absolute top-3 right-3 h-3 w-3 rounded-full border border-gray-400/50 bg-gradient-to-br from-gray-200 to-gray-400 shadow-sm" />
                   <div className="absolute bottom-3 left-3 h-3 w-3 rounded-full border border-gray-400/50 bg-gradient-to-br from-gray-200 to-gray-400 shadow-sm" />
@@ -58,23 +59,17 @@ export default function CareerFormSection() {
                       <span className="block font-sans text-2xl font-black tracking-widest text-white uppercase drop-shadow sm:text-4xl">
                         {roadSign.title}
                       </span>
-                      <span className="text-[11px] font-bold tracking-wider text-emerald-200 uppercase sm:text-xs">
+                      <span className="text-[11px] font-bold tracking-wider text-brass uppercase sm:text-xs">
                         {roadSign.subtitle}
                       </span>
                     </div>
                     <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white backdrop-blur-xs">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        className="h-10 w-10 drop-shadow-md sm:h-12 sm:w-12"
-                      >
-                        <path d="M4 11h12.17l-5.59-5.59L12 4l8 8-8 8-1.41-1.41L16.17 13H4v-2z" />
-                      </svg>
+                      <FaArrowRightLong className="h-9 w-9 drop-shadow-md sm:h-11 sm:w-11" />
                     </div>
                   </div>
                 </div>
                 <div className="mx-auto h-14 w-6 bg-gradient-to-r from-gray-400 via-gray-100 to-gray-400 shadow-lg" />
-                <div className="mx-auto h-3 w-20 rounded-full bg-sky-950/40 blur-xs" />
+                <div className="mx-auto h-3 w-20 rounded-full bg-ink/40 blur-xs" />
               </div>
             </div>
           </div>
@@ -84,27 +79,27 @@ export default function CareerFormSection() {
               <div className="mb-8">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="text-2xl font-bold tracking-tight text-[#06194a] sm:text-3xl">
+                    <h3 className="text-2xl font-bold tracking-tight text-ink sm:text-3xl">
                       {form.title}
                     </h3>
                     <p className="mt-1 text-sm text-gray-500">{form.description}</p>
                   </div>
-                  <div className="hidden h-12 w-12 items-center justify-center rounded-2xl bg-[#fdb913]/15 text-[#06194a] sm:flex">
-                    <FileText size={24} className="text-[#fdb913]" />
+                  <div className="hidden h-12 w-12 items-center justify-center rounded-2xl bg-brass/15 text-ink sm:flex">
+                    <FileText size={24} className="text-brass" />
                   </div>
                 </div>
-                <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-[#ea580c] to-[#fdb913]" />
+                <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-signal to-brass" />
               </div>
 
               {submitted ? (
-                <div className="rounded-2xl border border-emerald-200 bg-gradient-to-b from-emerald-50 to-white p-8 text-center">
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-600 text-white shadow-xl">
+                <div className="rounded-2xl border border-field/30 bg-gradient-to-b from-mist to-white p-8 text-center">
+                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-field text-white shadow-xl">
                     <CheckCircle2 size={36} />
                   </div>
-                  <h4 className="mt-4 text-2xl font-bold text-emerald-950">
+                  <h4 className="mt-4 text-2xl font-bold text-ink">
                     {form.success.title}
                   </h4>
-                  <p className="mx-auto mt-2 max-w-sm text-sm text-emerald-700">
+                  <p className="mx-auto mt-2 max-w-sm text-sm text-field">
                     {form.success.bodyBeforeName} <strong>{formData.name}</strong>
                     {form.success.bodyAfterName}{" "}
                     <strong>{formData.mobile}</strong>
@@ -117,7 +112,7 @@ export default function CareerFormSection() {
                       setFormData(emptyForm);
                       setFileName(null);
                     }}
-                    className="mt-6 rounded-xl bg-[#06194a] px-6 py-2.5 text-xs font-bold tracking-wider text-white uppercase shadow transition-colors hover:bg-[#0a2f8f]"
+                    className="mt-6 rounded-xl bg-ink px-6 py-2.5 text-xs font-bold tracking-wider text-white uppercase shadow transition-colors hover:bg-field"
                   >
                     {form.success.resetLabel}
                   </button>
@@ -141,7 +136,7 @@ export default function CareerFormSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
                         }
-                        className="w-full rounded-xl border border-gray-200 bg-gray-50/60 py-3.5 pl-11 pr-4 text-sm font-medium text-gray-800 placeholder-gray-400 transition-all focus:border-[#ea580c] focus:bg-white focus:ring-4 focus:ring-orange-500/10 focus:outline-none"
+                        className="w-full rounded-xl border border-gray-200 bg-gray-50/60 py-3.5 pl-11 pr-4 text-sm font-medium text-gray-800 placeholder-gray-400 transition-all focus:border-signal focus:bg-white focus:ring-4 focus:ring-signal/10 focus:outline-none"
                       />
                     </div>
                   </div>
@@ -164,7 +159,7 @@ export default function CareerFormSection() {
                           onChange={(e) =>
                             setFormData({ ...formData, email: e.target.value })
                           }
-                          className="w-full rounded-xl border border-gray-200 bg-gray-50/60 py-3.5 pl-11 pr-4 text-sm font-medium text-gray-800 placeholder-gray-400 transition-all focus:border-[#ea580c] focus:bg-white focus:ring-4 focus:ring-orange-500/10 focus:outline-none"
+                          className="w-full rounded-xl border border-gray-200 bg-gray-50/60 py-3.5 pl-11 pr-4 text-sm font-medium text-gray-800 placeholder-gray-400 transition-all focus:border-signal focus:bg-white focus:ring-4 focus:ring-signal/10 focus:outline-none"
                         />
                       </div>
                     </div>
@@ -187,7 +182,7 @@ export default function CareerFormSection() {
                           onChange={(e) =>
                             setFormData({ ...formData, mobile: e.target.value })
                           }
-                          className="w-full rounded-xl border border-gray-200 bg-gray-50/60 py-3.5 pl-11 pr-4 text-sm font-medium text-gray-800 placeholder-gray-400 transition-all focus:border-[#ea580c] focus:bg-white focus:ring-4 focus:ring-orange-500/10 focus:outline-none"
+                          className="w-full rounded-xl border border-gray-200 bg-gray-50/60 py-3.5 pl-11 pr-4 text-sm font-medium text-gray-800 placeholder-gray-400 transition-all focus:border-signal focus:bg-white focus:ring-4 focus:ring-signal/10 focus:outline-none"
                         />
                       </div>
                     </div>
@@ -212,7 +207,7 @@ export default function CareerFormSection() {
                         onChange={(e) =>
                           setFormData({ ...formData, address: e.target.value })
                         }
-                        className="w-full rounded-xl border border-gray-200 bg-gray-50/60 py-3.5 pl-11 pr-4 text-sm font-medium text-gray-800 placeholder-gray-400 transition-all focus:border-[#ea580c] focus:bg-white focus:ring-4 focus:ring-orange-500/10 focus:outline-none"
+                        className="w-full rounded-xl border border-gray-200 bg-gray-50/60 py-3.5 pl-11 pr-4 text-sm font-medium text-gray-800 placeholder-gray-400 transition-all focus:border-signal focus:bg-white focus:ring-4 focus:ring-signal/10 focus:outline-none"
                       />
                     </div>
                   </div>
@@ -221,17 +216,17 @@ export default function CareerFormSection() {
                     <label className="text-xs font-bold tracking-wider text-gray-700 uppercase">
                       {f.resume.label}
                     </label>
-                    <div className="flex overflow-hidden rounded-xl border border-gray-200 bg-gray-50/60 transition-all focus-within:border-[#ea580c] focus-within:ring-4 focus-within:ring-orange-500/10">
+                    <div className="flex overflow-hidden rounded-xl border border-gray-200 bg-gray-50/60 transition-all focus-within:border-signal focus-within:ring-4 focus-within:ring-signal/10">
                       <div className="flex flex-1 items-center truncate px-4 py-3 text-xs text-gray-500 sm:text-sm">
                         {fileName ? (
-                          <span className="flex items-center gap-1.5 truncate font-semibold text-emerald-700">
+                          <span className="flex items-center gap-1.5 truncate font-semibold text-field">
                             📄 {fileName}
                           </span>
                         ) : (
                           <span className="text-gray-400">{f.resume.emptyText}</span>
                         )}
                       </div>
-                      <label className="flex shrink-0 cursor-pointer items-center gap-2 bg-[#2e3e2e] px-6 py-3.5 text-xs font-bold tracking-wider text-white uppercase shadow-sm transition-all hover:bg-[#1f2b1f] active:scale-95">
+                      <label className="flex shrink-0 cursor-pointer items-center gap-2 bg-field px-6 py-3.5 text-xs font-bold tracking-wider text-white uppercase shadow-sm transition-all hover:bg-ink active:scale-95">
                         <Upload size={14} />
                         {f.resume.uploadLabel}
                         <input
@@ -252,7 +247,7 @@ export default function CareerFormSection() {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="group inline-flex w-full min-w-[200px] items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#f59e0b] via-[#ea580c] to-[#d97706] px-10 py-3.5 text-base font-bold tracking-wider text-white uppercase shadow-lg shadow-orange-500/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-orange-500/50 active:scale-95 disabled:opacity-70 sm:w-auto"
+                      className="group inline-flex w-full min-w-[200px] items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-signal via-signal-bright to-signal px-10 py-3.5 text-base font-bold tracking-wider text-white uppercase shadow-lg shadow-signal/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-signal/45 active:scale-95 disabled:opacity-70 sm:w-auto"
                     >
                       {loading ? (
                         form.submittingLabel
@@ -275,14 +270,14 @@ export default function CareerFormSection() {
                   {form.hrContact.prefix}{" "}
                   <a
                     href={form.hrContact.phoneHref}
-                    className="font-bold text-[#06194a] hover:underline"
+                    className="font-bold text-ink hover:underline"
                   >
                     {form.hrContact.phone}
                   </a>{" "}
                   | {form.hrContact.emailLabel}{" "}
                   <a
                     href={form.hrContact.emailHref}
-                    className="font-bold text-[#06194a] hover:underline"
+                    className="font-bold text-ink hover:underline"
                   >
                     {form.hrContact.email}
                   </a>

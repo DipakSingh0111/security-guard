@@ -25,7 +25,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${detail.title.normal} ${detail.title.highlighted} | VJ Security`,
+    title: `${detail.title.normal} ${detail.title.highlighted} | Shield Security`,
     description: detail.description,
   };
 }
@@ -48,7 +48,6 @@ async function ServiceDetailContent({
         title={banner.title}
         image={banner.image}
         items={banner.items}
-        compact
       />
       <ServiceDetail detail={detail} />
       <SecurityCta />

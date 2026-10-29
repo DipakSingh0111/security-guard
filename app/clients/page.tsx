@@ -21,7 +21,7 @@ export default function ClientsPage() {
       <section className="bg-[#f7f9fc] py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 overflow-hidden rounded-md bg-[#2b3520] py-3 text-center shadow-sm">
-            <h2 className="font-serif text-xl font-bold uppercase tracking-widest text-[#d6dfbb] sm:text-2xl">
+            <h2 className="font-display text-xl font-bold uppercase tracking-widest text-brass sm:text-2xl">
               {sectionHeading}
             </h2>
           </div>

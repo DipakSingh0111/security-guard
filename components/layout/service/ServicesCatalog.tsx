@@ -35,10 +35,10 @@ export default function ServicesCatalog() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <div className="mb-10">
-          <h2 className="font-serif text-2xl font-bold tracking-tight text-[#06194a] sm:text-3xl md:text-4xl">
+          <h2 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl md:text-4xl">
             Our Services
           </h2>
-          <div className="mt-2 h-0.5 w-16 bg-[#b91c1c]" />
+          <div className="mt-2 h-0.5 w-16 bg-signal" />
         </div>
 
         {/* 2-Column Grid as per user screenshot */}
@@ -56,7 +56,7 @@ export default function ServicesCatalog() {
                 className="group"
               >
                 {/* Title in Uppercase with dark/red font */}
-                <h3 className="mb-3 font-serif text-sm font-bold tracking-wide uppercase text-slate-800 transition-colors group-hover:text-[#b91c1c] sm:text-base">
+                <h3 className="mb-3 font-display text-sm font-bold tracking-wide uppercase text-slate-800 transition-colors group-hover:text-signal sm:text-base">
                   <Link href={href} className="hover:underline">
                     {item.title}
                   </Link>
@@ -67,7 +67,7 @@ export default function ServicesCatalog() {
                   {/* Photo with red border */}
                   <Link
                     href={href}
-                    className="relative block aspect-[4/3] w-full overflow-hidden border-2 border-[#b91c1c] shadow-sm bg-slate-100 transition-transform duration-300 group-hover:shadow-md"
+                    className="relative block aspect-[4/3] w-full overflow-hidden border-2 border-signal shadow-sm bg-slate-100 transition-transform duration-300 group-hover:shadow-md"
                   >
                     <Image
                       src={item.image}

@@ -2,33 +2,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { LuPhone, LuMail, LuUser } from "react-icons/lu";
 import ScrollReveal from "@/components/shared/ScrollReveal";
+import SecurityLogo from "@/components/shared/SecurityLogo";
 
-export default function VJSkillsContent() {
+export default function ShieldSkillsContent() {
   return (
     <section className="bg-white py-12 md:py-16">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         {/* Main Title Heading with Logo */}
         <div className="flex flex-col items-center justify-center gap-3 pb-8 border-b border-gray-200">
-          <div className="relative h-14 w-44 sm:h-16 sm:w-52">
-            <Image
-              src="/security_logo.png"
-              alt="VJ Security Logo"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <h2 className="font-serif text-3xl font-extrabold tracking-wide text-[#06194a] sm:text-4xl md:text-5xl text-center">
-            VJ SKILLS
-          </h2>
-          <div className="h-1 w-20 bg-[#991b1b] rounded-full" />
+          <SecurityLogo isDark={false} />
+          <div className="h-1 w-20 bg-signal rounded-full mt-2" />
         </div>
 
         {/* Introductory Overview */}
         <div className="mt-8 space-y-5 text-base leading-relaxed text-slate-700 sm:text-lg text-justify">
           <p>
-            <strong className="font-semibold text-[#06194a]">
-              VIRAJ GLOBAL Skills
+            <strong className="font-semibold text-ink">
+              SHIELD GLOBAL Skills
             </strong>{" "}
             ventured into skills development to create long term impact, aligned
             to the manpower needs of the industrial clusters. Currently we are
@@ -62,15 +52,15 @@ export default function VJSkillsContent() {
         {/* OUR MODEL Section */}
         <ScrollReveal direction="up">
           <div className="mt-12 overflow-hidden rounded-xl border border-gray-200 shadow-sm">
-            <div className="bg-[#8b1515] px-6 py-3.5 text-white">
-              <h3 className="font-serif text-lg font-bold tracking-wider uppercase sm:text-xl">
+            <div className="bg-signal px-6 py-3.5 text-white">
+              <h3 className="font-display text-lg font-bold tracking-wider uppercase sm:text-xl">
                 OUR MODEL :-
               </h3>
             </div>
 
             <div className="bg-slate-50/60 p-6 sm:p-8 space-y-6 text-sm leading-relaxed text-slate-700 sm:text-base text-justify">
               <div>
-                <h4 className="font-bold text-[#06194a] text-base sm:text-lg">
+                <h4 className="font-bold text-ink text-base sm:text-lg">
                   Selection of Trainers:-
                 </h4>
                 <p className="mt-1.5">
@@ -81,25 +71,25 @@ export default function VJSkillsContent() {
                 </p>
                 <ul className="mt-3 space-y-2 pl-2 text-left">
                   <li className="flex items-start gap-2">
-                    <span className="font-semibold text-[#8b1515]">(i)</span>
+                    <span className="font-semibold text-signal">(i)</span>
                     <span>
                       Relevant educational and technical education background,
                       as per industry standards.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="font-semibold text-[#8b1515]">(ii)</span>
+                    <span className="font-semibold text-signal">(ii)</span>
                     <span>Relevant Industrial Experience.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="font-semibold text-[#8b1515]">(iii)</span>
+                    <span className="font-semibold text-signal">(iii)</span>
                     <span>Facilitation skills.</span>
                   </li>
                 </ul>
               </div>
 
               <div className="border-t border-gray-200/80 pt-5">
-                <h4 className="font-bold text-[#06194a] text-base sm:text-lg">
+                <h4 className="font-bold text-ink text-base sm:text-lg">
                   Training:-
                 </h4>
                 <p className="mt-1.5">
@@ -110,7 +100,7 @@ export default function VJSkillsContent() {
               </div>
 
               <div className="border-t border-gray-200/80 pt-5">
-                <h4 className="font-bold text-[#06194a] text-base sm:text-lg">
+                <h4 className="font-bold text-ink text-base sm:text-lg">
                   Content:-
                 </h4>
                 <p className="mt-1.5">
@@ -123,7 +113,7 @@ export default function VJSkillsContent() {
               </div>
 
               <div className="border-t border-gray-200/80 pt-5">
-                <h4 className="font-bold text-[#06194a] text-base sm:text-lg">
+                <h4 className="font-bold text-ink text-base sm:text-lg">
                   Evaluation and Certification:-
                 </h4>
                 <p className="mt-1.5">
@@ -143,8 +133,8 @@ export default function VJSkillsContent() {
         {/* OUR SERVICES Section */}
         <ScrollReveal direction="up">
           <div className="mt-10 overflow-hidden rounded-xl border border-gray-200 shadow-sm">
-            <div className="bg-[#8b1515] px-6 py-3.5 text-white">
-              <h3 className="font-serif text-lg font-bold tracking-wider uppercase sm:text-xl">
+            <div className="bg-signal px-6 py-3.5 text-white">
+              <h3 className="font-display text-lg font-bold tracking-wider uppercase sm:text-xl">
                 OUR SERVICES :-
               </h3>
             </div>
@@ -152,10 +142,10 @@ export default function VJSkillsContent() {
             <div className="bg-slate-50/60 p-6 sm:p-8 space-y-6 text-sm leading-relaxed text-slate-700 sm:text-base">
               <div>
                 <p className="text-justify">
-                  <strong className="font-bold text-[#06194a]">
+                  <strong className="font-bold text-ink">
                     SKILLS FOR JOB :-
                   </strong>{" "}
-                  VIRAJ GLOBAL SKILLS helps to provide employment to unskilled
+                  SHIELD GLOBAL SKILLS helps to provide employment to unskilled
                   youth in various sectors such as Security Agency, Hospitality,
                   Courier etc. Employability of youth continues to be a major
                   challenge given the industry in India each year over 5 million
@@ -173,46 +163,46 @@ export default function VJSkillsContent() {
 
               {/* Contact Information Box */}
               <div className="rounded-xl border border-red-200 bg-red-50/50 p-6 sm:p-7">
-                <h4 className="font-serif text-base font-bold text-[#8b1515] sm:text-lg">
+                <h4 className="font-display text-base font-bold text-signal sm:text-lg">
                   Get more info on our Skills for Trainers practice contact:
                 </h4>
 
                 <div className="mt-4 space-y-2 text-slate-800">
-                  <p className="flex items-center gap-2 font-semibold text-[#06194a]">
-                    <LuUser className="text-[#8b1515]" size={18} />
-                    <span>Mr. Sanjay Rajvanshi</span>
+                  <p className="flex items-center gap-2 font-semibold text-ink">
+                    <LuUser className="text-signal" size={18} />
+                    <span>Training Operations Desk</span>
                   </p>
                   <p className="text-sm font-medium text-slate-600 pl-6">
-                    Head - Academic Group
+                    Head - Academic & Field Command
                   </p>
                   <p className="text-sm font-semibold text-slate-700 pl-6">
-                    Viraj Global Skills
+                    Shield Global Skills Academy
                   </p>
                   <p className="flex flex-wrap items-center gap-2 pt-2 text-sm">
-                    <LuMail className="text-[#8b1515]" size={17} />
+                    <LuMail className="text-signal" size={17} />
                     <span className="text-slate-600">Email:</span>
                     <a
-                      href="mailto:sanjayrajvanshi@gmail.com"
-                      className="font-medium text-[#8b1515] hover:underline"
+                      href="mailto:training@securityguardagency.com"
+                      className="font-medium text-signal hover:underline"
                     >
-                      sanjayrajvanshi@gmail.com
+                      training@securityguardagency.com
                     </a>
                     <span className="text-slate-400">,</span>
                     <a
-                      href="mailto:virajglobalskills@gmail.com"
-                      className="font-medium text-[#8b1515] hover:underline"
+                      href="mailto:skills@securityguardagency.com"
+                      className="font-medium text-signal hover:underline"
                     >
-                      virajglobalskills@gmail.com
+                      skills@securityguardagency.com
                     </a>
                   </p>
                   <p className="flex items-center gap-2 pt-1 text-sm">
-                    <LuPhone className="text-[#8b1515]" size={17} />
+                    <LuPhone className="text-signal" size={17} />
                     <span className="text-slate-600">Tel:</span>
                     <a
-                      href="tel:+919910009574"
-                      className="font-medium text-[#8b1515] hover:underline"
+                      href="tel:+919876543210"
+                      className="font-medium text-signal hover:underline"
                     >
-                      +91-9910009574
+                      +91-9876543210
                     </a>
                   </p>
                 </div>

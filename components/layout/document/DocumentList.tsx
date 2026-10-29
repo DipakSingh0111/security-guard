@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { LuLoader, LuExternalLink } from "react-icons/lu";
+import { FaFilePdf } from "react-icons/fa6";
 
 interface DocumentItem {
   id: string;
@@ -51,44 +52,20 @@ export default function DocumentList({
                     size={36}
                     className="animate-spin text-[#d9222a]"
                   />
-                  <span className="text-[11px] font-bold text-[#b91c1c]">
+                  <span className="text-[11px] font-bold text-signal">
                     Loading...
                   </span>
                 </div>
               ) : (
-                <svg
-                  viewBox="0 0 64 64"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-20 w-20 drop-shadow-md"
-                >
-                  <rect
-                    width="64"
-                    height="64"
-                    rx="14"
-                    fill="#fdfdfd"
-                    stroke="#e5e7eb"
-                    strokeWidth="1.5"
-                  />
-                  <path
-                    d="M18 46C18 43.5 22 36 29 27C27 21 25.5 14 27.5 13C29 12 31 13 32 17C33.5 23 33 27 35 30C40 33 46 36 47 38.5C48 41 46 43 43 43C39 43 33 39 29.5 37C24.5 42 19 46 18 46Z"
-                    stroke="#d9222a"
-                    strokeWidth="3.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M31 29C29 32 23 39 19.5 43.5C21 44.5 24 43 27.5 39"
-                    stroke="#b91c1c"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                  />
-                </svg>
+                <FaFilePdf
+                  size={58}
+                  className="text-signal drop-shadow-md transition-transform duration-300 group-hover:scale-110"
+                />
               )}
             </div>
 
             {/* Bottom Red Label */}
-            <div className="w-full rounded bg-[#9b1d20] py-2 text-center shadow-md transition-colors group-hover:bg-[#b91c1c] flex items-center justify-center gap-1.5">
+            <div className="w-full rounded bg-[#9b1d20] py-2 text-center shadow-md transition-colors group-hover:bg-signal flex items-center justify-center gap-1.5">
               <span className="block text-xs font-bold uppercase tracking-wide text-white md:text-sm">
                 {doc.title}
               </span>
